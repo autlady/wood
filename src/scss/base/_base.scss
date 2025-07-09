@@ -1,0 +1,148 @@
+@font-face {
+  font-family: 'Gilroy';
+  src: local('Gilroy Regular'), local('Gilroy-Regular'),
+    url('../fonts/Gilroy-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: local('Gilroy Bold'), local('Gilroy-Bold'),
+    url('../fonts/Gilroy-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.none {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+html,
+body {
+  margin: 0;
+  font-family: var(--font-main);
+  padding: 0;
+  width: 100%;
+
+  -webkit-font-smoothing: antialiased;
+}
+
+.noscroll {
+  overflow: hidden;
+  touch-action: none;
+  -ms-touch-action: none;
+  height: 100vh;
+}
+
+a {
+  color: inherit;
+  display: inline-block;
+  transition: color 0.2s ease-in;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+input,
+button,
+button:focus,
+input:focus {
+  outline: none;
+}
+
+button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+input[type="submit"] {
+  padding: 0;
+  cursor: pointer;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border-bottom: 1px solid red;
+  -webkit-text-fill-color: #ffffff;
+  -webkit-box-shadow: 0 0 0px 1000px #01203c inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.headline {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: normal;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.section-title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.62;
+}
+
+.subtitle {
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 1.43;
+  color: var(--accent-color);
+  text-transform: uppercase;
+}
+
+.text-black {
+  color: #000;
+}

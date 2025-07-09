@@ -1,0 +1,30 @@
+.advantages {
+
+}
+
+.advantages-row {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 5px;
+}
+
+.advantage {
+    width: 310px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.advantage__img {
+    margin-bottom: 17px;
+    display: flex;
+    align-items: center;
+}
+
+.advantage__text {
+    max-width: 215px;
+    font-size: 17px;
+    line-height: 1.94;
+    text-align: center;
+}

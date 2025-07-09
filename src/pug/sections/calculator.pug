@@ -1,0 +1,70 @@
+// CALCULATOR
+section.calculator.none
+    .container
+        .calculator__title
+            h2.section-title Калькулятор дров
+        .calculator-box
+            .dropdowns
+                // DROPDOWN
+                .dropdown
+                    button.dropdown__button
+                       span Выберите тип дров
+                    ul.dropdown__list
+                       li.dropdown__list-item(data-value="item1") Березовые дрова
+                       li.dropdown__list-item(data-value="item2") Осиновые дрова
+                       li.dropdown__list-item(data-value="item3") Сосновые дрова
+                       li.dropdown__list-item(data-value="item4") Еловые дрова
+                    input.dropdown__input-hidden(type="text" name="select-category" value="Услуга1")
+                // DROPDOWN
+                .dropdown
+                    button.dropdown__button
+                       span Выберите влажность дров
+                    ul.dropdown__list
+                       li.dropdown__list-item(data-value="item1") 50%
+                       li.dropdown__list-item(data-value="item2") 45%
+                       li.dropdown__list-item(data-value="item3") 40% (подсушенные 1-3 недели, естественной сушки)
+                       li.dropdown__list-item(data-value="item4") 30%
+                       li.dropdown__list-item(data-value="item4") 25%
+                       li.dropdown__list-item(data-value="item4") 20% (годовалые дрова под навесом естественной сушки)
+                       li.dropdown__list-item(data-value="item4") 15% (дрова из камерной сушки)
+                    input.dropdown__input-hidden(type="text" name="select-category" value="Услуга1")
+                // DROPDOWN
+                .dropdown
+                    button.dropdown__button
+                       span Выберите площадь помещения
+                    ul.dropdown__list
+                       li.dropdown__list-item(data-value="item1") 10
+                       li.dropdown__list-item(data-value="item2") 20
+                       li.dropdown__list-item(data-value="item3") 30
+                       li.dropdown__list-item(data-value="item4") 40
+                       li.dropdown__list-item(data-value="item4") 50
+                       li.dropdown__list-item(data-value="item4") 60
+                       li.dropdown__list-item(data-value="item4") 70
+                       li.dropdown__list-item(data-value="item4") 80
+                       li.dropdown__list-item(data-value="item4") 90
+                       li.dropdown__list-item(data-value="item4") 100
+                       li.dropdown__list-item(data-value="item4") 150
+                       li.dropdown__list-item(data-value="item4") 200
+                       li.dropdown__list-item(data-value="item4") 300
+                       li.dropdown__list-item(data-value="item4") 500
+                    input.dropdown__input-hidden(type="text" name="select-category" value="Услуга1")
+                // DROPDOWN
+                .dropdown
+                    button.dropdown__button
+                       span Выберите период отопления
+                    ul.dropdown__list
+                       li.dropdown__list-item(data-value="item1") 1 год
+                       li.dropdown__list-item(data-value="item2") 6 месяцев
+                       li.dropdown__list-item(data-value="item3") 5 месяцев
+                       li.dropdown__list-item(data-value="item4") 4 месяца
+                       li.dropdown__list-item(data-value="item4") 3 месяца
+                       li.dropdown__list-item(data-value="item4") 2 месяца
+                       li.dropdown__list-item(data-value="item4") 1 месяц
+                       li.dropdown__list-item(data-value="item4") 1 неделя
+                       li.dropdown__list-item(data-value="item4") 1 день
+                    input.dropdown__input-hidden(type="text" name="select-category" value="Услуга1")
+            .calculator-footer
+                .calculator__text Количество дров, необходимых для отопления (м3):
+                .calculator__result 7
+                    span м3
+

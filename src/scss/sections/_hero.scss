@@ -1,0 +1,77 @@
+.hero {
+    position: relative;
+    height: 721px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(../../img/hero/hero-bg@2x.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero::after {
+    content: '';
+    // background-color: #66FF00;
+    background-image: url(../../img/hero/clouds@2x.webp);
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 250px;
+    z-index: 9;
+}
+
+.hero-content {
+    padding-top: 96px;
+    width: 685px;
+}
+
+.hero__title {
+    margin-bottom: 6px;
+}
+
+.hero__text {
+    width: 436px;
+    margin-bottom: 21px;
+    font-size: 25px;
+    line-height: 1.6;
+    color: #fff;
+}
+
+.hero__info {
+    margin-left: 35px;
+    font-size: 17px;
+    color: #66FF00;
+    line-height: 1;
+}
+
+.hero__images {
+    position: absolute;
+    top: 13px;
+    right: 85px;
+}
+
+.hero__cone-lg {
+    position: absolute;
+    width: 296px;
+    height: 368px;
+    bottom: 7%;
+    left: -48%;
+    z-index: 7;
+}
+
+.hero__cone-md {
+    position: absolute;
+    width: 230px;
+    top: 51%;
+    right: -7%;
+    z-index: 7;
+}
+
+.hero__cone-sm {
+    width: 180px;
+    position: absolute;
+    top: 3%;
+    left: -22%;
+    z-index: 7;
+}

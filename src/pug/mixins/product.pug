@@ -1,0 +1,17 @@
+mixin product(title, img, quantity, price, accent, info)
+    // PRODUCT CARD
+    .product-card
+        h3.product-card__title !{title}
+            if accent
+                span (!{accent})
+        .product-card__img
+            img(src="./img/products/" + img + ".webp" srcset="./img/products/" + img + "@2x.webp 2x" width height alt="product" loading="lazy")
+        .product-card__row
+            .product-card__col
+                .product-card__quantity !{quantity}
+                if info
+                    .product-card__info !{info}
+            .product-card__price !{price}
+        block
+        .product-card__btn
+            button.btn-order Заказать
