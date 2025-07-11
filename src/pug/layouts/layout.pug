@@ -9,13 +9,17 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         link(rel="stylesheet", href="libs/swiper.min.css")
+        link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css")
+        //- link(rel="stylesheet", href="libs/fancybox/fancybox.css")
         link(rel="stylesheet", href="css/main.css")
-        
+
         title #{title}
 
     body
-    
-        block content  
+
+        block content
 
         script(src="libs/swiper.js")
+        script(src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js")
+        //- script(src="libs/fancybox/fancybox.umd.js")
         script(src="js/main.js")

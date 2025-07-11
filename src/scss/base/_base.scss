@@ -139,7 +139,7 @@ select:-webkit-autofill:focus {
   color: #fff;
 }
 
-.subtitle {
+.accent-subtitle {
   font-size: 23px;
   font-weight: 700;
   line-height: 1.43;
@@ -149,4 +149,9 @@ select:-webkit-autofill:focus {
 
 .text-black {
   color: #000;
+}
+
+.section-subtitle {
+  font-weight: 700;
+  font-size: 20px;
 }

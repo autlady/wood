@@ -1,3 +1,10 @@
+document.addEventListener("DOMContentLoaded", function () {
+
+    // Fancybox
+    Fancybox.bind("[data-fancybox]", {
+      Thumbs: false,
+    });
+
 // const toggleMenu = document.querySelector('menu-toggle');
 
 // if (toggleMenu){
@@ -81,20 +88,22 @@
     }
   }
 
-const swiper = new Swiper('#products-slider', {
+  /************************************* */
 
-  slidesPerView: 3,
-  spaceBetween: 32,
-  loop: true,
+  // PRODUCTION slider
 
-  pagination: {
-    el: '#products-slider-pagination',
-  },
+  const swiperProd = new Swiper('.production-slider', {
+    // Optional parameters
+    slidesPerView: 4,
+    spaceBetween: 0,
+    loop: true,
 
-  navigation: {
-    nextEl: '#btn-next',
-    prevEl: '#btn-prev',
-  },
+    // Navigation arrows
+    navigation: {
+      nextEl: '#slider-next-prod',
+      prevEl: '#slider-prev-prod',
+    },
+  });
+  /************************************* */
+
 });
-
-

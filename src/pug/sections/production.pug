@@ -1,0 +1,51 @@
+// PRODUCTION
+section.production
+    .container
+        .production__title
+            h2.section-title Как мы работаем?
+        // PRODUCTION VIDEOS
+        .production-videos
+            // PRODUCTION VIDEO
+            .production-video
+                .production-video__title
+                    h3.section-subtitle Как мы грузим дрова и проверяем объём? Видео.
+                a(href="https://www.youtube.com/embed/__-vp0g_BhA?si=ATYLxRiZZo-EeydT" data-fancybox="video-about").production-video__box
+                    img(src="./img/production/video-poster.webp" srcset="./img/production/video-poster@2x.webp 2x" width="596" height="339" alt="img" loading="lazy")
+            // PRODUCTION VIDEO
+            .production-video
+                .production-video__title
+                    h3.section-subtitle Наше производство. Видео.
+                a(href="https://www.youtube.com/embed/__-vp0g_BhA?si=ATYLxRiZZo-EeydT" data-fancybox="video-about").production-video__box
+                    img(src="./img/production/video-poster.webp" srcset="./img/production/video-poster@2x.webp 2x" width="596" height="339" alt="img" loading="lazy")
+        // PRODUCTION PHOTOS
+        .production-photo
+            .production-photo__title
+                h3.section-subtitle Фото нашего производства.
+            // SLIDER
+            .slider-wrapper
+                .swiper.production-slider
+                    .swiper-wrapper
+                        .swiper-slide
+                            img(src="./img/production/production01.webp" srcset="./img/production/production01@2x.webp 2x" width="309" height="210" alt="img" loading="lazy")
+                        .swiper-slide
+                            img(src="./img/production/production02.webp" srcset="./img/production/production02@2x.webp 2x" width="309" height="210" alt="img" loading="lazy")
+                        .swiper-slide
+                            img(src="./img/production/production03.webp" srcset="./img/production/production03@2x.webp 2x" width="309" height="210" alt="img" loading="lazy")
+                        .swiper-slide
+                            img(src="./img/production/production04.webp" srcset="./img/production/production04@2x.webp 2x" width="309" height="210" alt="img" loading="lazy")
+                        .swiper-slide
+                            img(src="./img/production/production01.webp" srcset="./img/production/production01@2x.webp 2x" width="309" height="210" alt="img" loading="lazy")
+                        .swiper-slide
+                            img(src="./img/production/production02.webp" srcset="./img/production/production02@2x.webp 2x" width="309" height="210" alt="img" loading="lazy")
+                        .swiper-slide
+                            img(src="./img/production/production03.webp" srcset="./img/production/production03@2x.webp 2x" width="309" height="210" alt="img" loading="lazy")
+                        .swiper-slide
+                            img(src="./img/production/production04.webp" srcset="./img/production/production04@2x.webp 2x" width="309" height="210" alt="img" loading="lazy")
+                // slider controls
+                button.slider-prev#slider-prev-prod
+                    svg.svg-prev
+                        use(href="./img/spriteSvg.svg#svg-prev")
+                button.slider-next#slider-next-prod
+                    svg.svg-next
+                        use(href="./img/spriteSvg.svg#svg-next")
+
