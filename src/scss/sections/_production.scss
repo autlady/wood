@@ -62,6 +62,10 @@
     transition: .3s;
     background-color: var(--accent-color);
     z-index: 7;
+
+    &:hover {
+        background-color: lighten($color: #44a603, $amount: 5%);;
+    }
 }
 
 .slider-prev {
