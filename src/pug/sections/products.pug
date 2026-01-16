@@ -8,23 +8,110 @@ section.products
             .swiper.products-slider
                 .swiper-wrapper
                     // SLIDE
-                    //- .swiper-slide
-                    //-     .product-card
-                    //-         h3.product-card__title Березовые колотые
-                    //-             span (c доставкой)
-                    //-         .product-card__img
-                    //-             img(src="./img/products/product01.webp" srcset="./img/products/product01@2x.webp 2x" width height alt="product" loading="lazy")
-                    //-         .product-card__row
-                    //-             .product-card__col
-                    //-                 .product-card__quantity 2 куб
-                    //-                 .product-card__info с доставкой
-                    //-             .product-card__price 6990 р.
-                    //-         .product-card__row
-                    //-             .product-card__col
-                    //-                 .product-card__quantity 3 куб
-                    //-                 .product-card__info (1 куб 2967р.)
-                    //-             .product-card__price 8900 р.
-                    //-         .product-card__btn
-                    //-             button.btn-order Заказать
                     .swiper-slide
-                        +product("Березовые колотые", "product01", "2 куб", "6990 р.", "c доставкой", "с доставкой")
+                        .product-card
+                            h3.product-card__title Березовые колотые
+                                span (c доставкой)
+                            .product-card__img
+                                img(src="./img/products/product01.webp" srcset="./img/products/product01@2x.webp 2x" width height alt="product" loading="lazy")
+                            ul.product-card__list
+                                li.product-card__row
+                                    .product-card__col
+                                        .product-card__quantity 2 куб
+                                        .product-card__info с доставкой
+                                    .product-card__price 6990 р.
+                                li.product-card__row
+                                    .product-card__col
+                                        .product-card__quantity 3 куб
+                                        .product-card__info (1 куб 2967р.)
+                                    .product-card__price 8900 р.
+                            .product-card__btn
+                                button.btn-order Заказать
+                    .swiper-slide
+                        +product({
+                            title: 'Березовые колотые',
+                            accent: 'с доставкой',
+                            img: 'product01',
+                            list: [
+                                {quantity: '2 куб', info: 'с доставкой', price: '6990 р.'},
+                                {quantity: '3 куб', info: '(1 куб 2967р.)', price: '8900 р.'},
+                                {quantity: '4 куб', info: '(1 куб 2925р.)', price: '11700 p.'},
+                                {quantity: '5 куб', info: '(1 куб 2920р.)', price: '14600 р.'},
+                                {quantity: '6 куб', info: '(1 куб 2900р.)', price: '17400 р.'},
+                            ],
+
+                        })
+                    .swiper-slide
+                        +product({
+                            title: 'Дрова, сосна, осина',
+                            img: 'product02',
+                            list: [
+                                {quantity: '1 пачка', info: 'самовывоз', price: '349 р.'},
+                                {quantity: '6-7 куб', info: 'доставка', price: '2490 р.'},
+                            ],
+                            desc: 'Сосновая/осиновая срезка и горбыль, в пачках по ~1.2-1.5 куба, самовывоз или с доставкой и разгрузкой по 5 пачек в кузове ~6-7 кубов.',
+                        })
+                    .swiper-slide
+                        +product({
+                            title: 'Березовые колотые',
+                            accent: 'самовывоз',
+                            img: 'product03',
+                            list: [
+                                {quantity: '2 куб', info: 'с доставкой', price: '2490 р.'},
+                                {quantity: '3 куб', info: '(1 куб 2967р.)', price: '7470 р.'},
+                                {quantity: '6 куб', info: '(1 куб 2925р.)', price: '14940 р.'},
+                            ],
+                        })
+                    .swiper-slide
+                        +product({
+                            title: 'Береза + осина колотые',
+                            img: 'product04',
+                            list: [
+                                {quantity: '3 куб (2+1)', info: '', price: '8500 р.'},
+                                {quantity: '6 куб (4+2)', info: '', price: '16000 р.'},
+                            ],
+                            desc: 'береза + сухая осина',
+                        })
+                    .swiper-slide
+                        +product({
+                            title: 'Берёза разноразмерная',
+                            img: 'product05',
+                            list: [
+                                {quantity: '2 куб', info: 'самовывоз', price: '1650 р.'},
+                                {quantity: '3 куб', info: 'самовывоз', price: '5990 р.'},
+                                {quantity: '3 куб', info: 'с доставкой', price: '6700 р.'},
+                            ],
+                        })
+                    .swiper-slide
+                        +product({
+                            title: 'Карандаш березовый',
+                            img: 'product06',
+                            list: [
+                                {quantity: '1 куб', info: '', price: '2500 р.'},
+                            ],
+                            desc: 'уже распилен, до 45 см',
+                        })
+                    .swiper-slide
+                        +product({
+                            title: 'Осиновые колотые',
+                            img: 'product07',
+                            list: [
+                                {quantity: '1 куб', info: '', price: 'от 2390 р.'},
+                            ],
+                        })
+                    .swiper-slide
+                        +product({
+                            title: 'Некондиция, комель',
+                            img: 'product08',
+                            list: [
+                                {quantity: '1 куб', info: '', price: '1490 р.'},
+                            ],
+                        })
+                    .swiper-slide
+                        +product({
+                            title: 'Дрова в сетках',
+                            img: 'product09',
+                            list: [
+                                {quantity: 'от 4 до 13 полений', info: '', price: 'от 69р. до 190 р.'},
+                            ],
+                        })

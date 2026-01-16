@@ -1,17 +1,22 @@
-mixin product(title, img, quantity, price, accent, info)
+mixin product(obj)
     // PRODUCT CARD
     .product-card
-        h3.product-card__title !{title}
-            if accent
-                span (!{accent})
+        h3.product-card__title !{obj.title}
+            if obj.accent
+                span (!{obj.accent})
         .product-card__img
-            img(src="./img/products/" + img + ".webp" srcset="./img/products/" + img + "@2x.webp 2x" width height alt="product" loading="lazy")
-        .product-card__row
-            .product-card__col
-                .product-card__quantity !{quantity}
-                if info
-                    .product-card__info !{info}
-            .product-card__price !{price}
-        block
+            img(src="./img/products/" + obj.img + ".webp" srcset="./img/products/" + obj.img + "@2x.webp 2x" width height alt="product" loading="lazy")
+        ul.product-card__list
+            each item in obj.list
+                li.product-card__row
+                    .product-card__col
+                        if item.quantity
+                            .product-card__quantity !{item.quantity}
+                        if item.info
+                            .product-card__info !{item.info}
+                    if item.price
+                        .product-card__price !{item.price}
+        if obj.desc
+            p.product-card__desc !{obj.desc}
         .product-card__btn
             button.btn-order Заказать
