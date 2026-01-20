@@ -1,8 +1,29 @@
+.rating {
+    padding-block: 50px;
+}
+
+.section-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.rating-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
 .rating__title {
+    font-family: var(--second-family);
     font-weight: 700;
     font-size: 23px;
     line-height: 1.43;
-    text-align: center;
+    // text-align: center;
+}
+
+.rating-row {
+    display: inline-flex;
+    align-items: center;
 }
 
 .rating-text {
@@ -12,23 +33,49 @@
     color: #fff;
 }
 
-.stars-rating-wrapper {
-    position: relative;
-    width: 145px;
+.rating-block {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-inline: 15px;
+    border-radius: 5px;
+    width: 415px;
+    height: 60px;
+    background-color: var(--accent-color);
 }
 
-.stars-rating-disabled, .stars-rating-accent {
-    width: 100%;
+.rating-stars {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+svg.svg-star {
+    width: 29px;
     height: 28px;
-    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='29' height='28' viewBox='0 0 29 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M14.2656 0L17.6333 10.3647H28.5315L19.7147 16.7705L23.0824 27.1353L14.2656 20.7295L5.44885 27.1353L8.81656 16.7705L-0.00022316 10.3647H10.8979L14.2656 0Z' fill='%23D9D9D9'/%3e%3c/svg%3e ");
-    background-repeat: repeat-x;
+    color: white;
 }
 
-.stars-rating-accent {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
+svg.svg-star.disabled {
+    color: red;
+}
+
+.rating-icons {
+    position: relative;
     z-index: 2;
-    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='29' height='28' viewBox='0 0 29 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M14.2656 0L17.6333 10.3647H28.5315L19.7147 16.7705L23.0824 27.1353L14.2656 20.7295L5.44885 27.1353L8.81656 16.7705L-0.00022316 10.3647H10.8979L14.2656 0Z' fill='%23F8EE00'/%3e%3c/svg%3e ");
+    left: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+    height: 47px;
+
+    img {
+        height: 47px;
+        object-fit: contain;
+    }
+
+    a:hover {
+        scale: 1.1;
+    }
 }

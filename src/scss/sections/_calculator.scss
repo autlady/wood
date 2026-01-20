@@ -91,6 +91,7 @@
 }
 
 .calculator__text {
+    font-family: var(--second-family);
     font-weight: 700;
     font-size: 17px;
     line-height: 1.18;
@@ -103,16 +104,14 @@
 }
 
 .calculator__result {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 5px;
     width: 81px;
     height: 55px;
     background-color: #584340;
+    font-family: var(--second-family);
     font-weight: 700;
     font-size: 24px;
-    line-height: 83%;
+    line-height: 55px;
     text-align: center;
     color: #fff;
 

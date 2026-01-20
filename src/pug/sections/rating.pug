@@ -1,11 +1,32 @@
 // RATING
 section.rating
     .container
-        h3.rating__title Более 800 отзывов на 2Гис, Фламп, Яндекс, Гугл, Авито
-        .rating-row
-            .rating-block
-                .rating-text Смотреть отзывы
-                .stars-rating-wrapper(data-rating="4.5")
-                    .stars-rating-accent.js-stars
-                    .stars-rating-disabled
-            .rating-icons
+        .section-wrapper
+            .rating-wrapper
+                h3.rating__title Более 800 отзывов на 2Гис, Фламп, Яндекс, Гугл, Авито
+                .rating-row
+                    .rating-block
+                        .rating-text Смотреть отзывы
+                        .rating-stars
+                            svg.svg-star
+                                use(href="./img/spriteSvg.svg#svg-star")
+                            svg.svg-star
+                                use(href="./img/spriteSvg.svg#svg-star")
+                            svg.svg-star
+                                use(href="./img/spriteSvg.svg#svg-star")
+                            svg.svg-star
+                                use(href="./img/spriteSvg.svg#svg-star")
+                            svg.svg-star
+                                use(href="./img/spriteSvg.svg#svg-star")
+                    // RATING ICONS
+                    .rating-icons
+                        a.rating-link(href="#!")
+                            img(src="./img/rating/2gis@2x.webp" width="47" alt="img")
+                        a.rating-link(href="#!")
+                            img(src="./img/rating/yandex@2x.webp" width="27" alt="img")
+                        a.rating-link(href="#!")
+                            img(src="./img/rating/flamp@2x.webp" width="49" alt="img")
+                        a.rating-link(href="#!")
+                            img(src="./img/rating/avito@2x.webp" width="53" alt="img")
+                        a.rating-link(href="#!")
+                            img(src="./img/rating/google@2x.webp" width="47" alt="img")
