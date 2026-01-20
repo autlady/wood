@@ -61,8 +61,6 @@ document.addEventListener("DOMContentLoaded", function () {
           dropDownBtn.querySelector('span').classList.add('text-black');
           console.log(this.innerText);
           dropDownBtn.focus();
-          // dropDownInput.value = this.dataset.value;
-          // console.log(dropDownInput.value);
           dropDownInput.setAttribute('value', this.innerText);
           dropDownList.classList.remove('dropdown__list--visible');
           dropDownBtn.classList.remove('dropdown__button--active');
@@ -106,4 +104,42 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   /************************************* */
 
+    // PRODUCTS SLIDER
+    let specificSwiperProd = null;
+
+    function initSpecificSwiperProd() {
+      const windowWidth = window.innerWidth;
+      const swiperContainerProd = document.querySelector(".products-slider");
+
+      if (windowWidth <= 1369 && swiperContainerProd && !specificSwiperProd) {
+        specificSwiperProd = new Swiper(".products-slider", {
+          slidesPerView: 1,
+          spaceBetween: 20,
+          grid: {
+            rows: 2,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          breakpoints: {
+            870: {
+              spaceBetween: 16,
+              slidesPerView: 2,
+            },
+          },
+        });
+      }
+
+      if (windowWidth > 1369 && specificSwiperProd) {
+        specificSwiperProd.destroy(true, true);
+        specificSwiperProd = null;
+      }
+    }
+
+    initSpecificSwiperProd();
+    window.addEventListener("resize", initSpecificSwiperProd);
+    /************************************* */
+
 });
+
