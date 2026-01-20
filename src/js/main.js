@@ -5,6 +5,17 @@ document.addEventListener("DOMContentLoaded", function () {
       Thumbs: false,
     });
 
+    // Рейтинг со звездами
+    document.querySelectorAll('[data-rating]').forEach(wrapper => {
+      const ratingValue = parseFloat(wrapper.getAttribute('data-rating')) || 0;
+      const ratingActiveStars = wrapper.querySelector('.js-stars');
+
+      if (ratingActiveStars) {
+          const currentWidth = `${ratingValue * (100/5)}%`;
+          ratingActiveStars.style.width = currentWidth;
+      }
+  })
+
 // const toggleMenu = document.querySelector('menu-toggle');
 
 // if (toggleMenu){
