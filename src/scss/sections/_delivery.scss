@@ -1,3 +1,30 @@
-.delivery__text {
-    
+.delivery {
+    padding-bottom: 70px;
 }
+
+.delivery-wrapper {
+    position: relative;
+}
+
+.delivery-col {
+    width: 55%;
+}
+
+.delivery__text {
+    max-width: 620px;
+    margin-bottom: 30px;
+    font-size: 17px;
+    line-height: 1.94;
+
+    p + p {
+        margin-top: 20px;
+    }
+}
+
+.delivery__img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
