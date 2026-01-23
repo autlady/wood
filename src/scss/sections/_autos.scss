@@ -16,6 +16,24 @@
   }
 }
 
+.autos-col {
+  width: 33.8%;
+}
+
+.autos-content {
+  display: flex;
+  column-gap: 97px;
+}
+
+.autos__text {
+
+}
+
+.autos__bg img {
+  border-radius: 7px;
+  box-shadow: 0 0 40px 1px rgba(0, 0, 0, 0.25);
+}
+
 
 // .auto-wrapper {
 //     display: flex;
