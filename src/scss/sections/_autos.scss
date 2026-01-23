@@ -1,7 +1,19 @@
-.auto-wrapper {
+.autos-wrapper {
+  margin-bottom: 70px;
   display: flex;
   flex-wrap: wrap;
   gap: 60px;
+}
+
+.autos__text {
+  max-width: 421px;
+  margin-bottom: 30px;
+  font-size: 17px;
+  line-height: 1.94;
+
+  p + p {
+      margin-top: 20px;
+  }
 }
 
 

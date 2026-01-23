@@ -2,9 +2,18 @@
 section.autos
     .container
         h2.section-title Наши автомобили
-        .auto-wrapper
+        .autos-wrapper
             +auto("auto1", "Газель удлиненная", "до 2,5 тонн, 4 куб дров")
             +auto("auto2", "Зил-бычок, самосвал", "до 5 тонн, 6 куб дров")
             +auto("auto3", "Валдай, самосвал", "до 2,5 тонн, 4 куб дров")
             +auto("auto4", "Перегружатель леса ЕК-18", "с грейферным захватом для леса")
             +auto("auto5", "Погрузчик ХТЗ Т-150", "с ковшом и вилами для леса")
+        .autos-content
+            .autos-col
+                p.autos__text Дополнительно, возможно привлечение другой, специализированной техники с грузоподъемностью от 2 до 20 тонн для доставки дров, пиломатериала, опила и другой нашей продукции.
+                .autos__btn
+                    .btn.btn--calc
+                        span Рассчитать стоимость
+                        img(src="./img/hero/btn-img.webp" srcset="./img/hero/btn-img@2x.webp 2x" alt="wood", width="93", height="73")
+            .autos__img
+
