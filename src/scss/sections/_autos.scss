@@ -1,3 +1,10 @@
+.auto-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+
 .container-cards {
     display: flex;
     flex-wrap: wrap;

@@ -1,12 +1,44 @@
 .auto {
+    width: 29.8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s;
+}
 
+.auto:nth-child(4), .auto:nth-child(5) {
+    width: 47.4%;
+}
+
+.auto:hover {
+    transform: translateY(-5px);
 }
 
 .auto__img {
-    
+    width: 100%;
+    height: 275px;
+    margin-bottom: 30px;
+    // overflow: hidden;
 }
 
 .auto__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 5px;
     box-shadow: 0 0 40px 1px rgba(0, 0, 0, 0.25);
+}
+
+.auto__name {
+    margin-bottom: 16px;
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.75;
+    color: var(--accent-color);
+}
+
+.auto__desc {
+    font-size: 17px;
+    line-height: 1.94;
 }

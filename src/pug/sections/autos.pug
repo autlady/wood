@@ -3,8 +3,8 @@ section.autos
     .container
         h2.section-title Наши автомобили
         .auto-wrapper
-            .auto
-                .auto__img
-                    img(src="./img/auto/auto1.webp" srcset="./img/auto/auto1@2x.webp" alt="auto" width="370" height="275" loading="lasy")
-                h3.auto__name Газель удлиненная
-                .auto__desc до 2,5 тонн, 4 куб дров
+            +auto("auto1", "Газель удлиненная", "до 2,5 тонн, 4 куб дров")
+            +auto("auto2", "Зил-бычок, самосвал", "до 5 тонн, 6 куб дров")
+            +auto("auto3", "Валдай, самосвал", "до 2,5 тонн, 4 куб дров")
+            +auto("auto4", "Перегружатель леса ЕК-18", "с грейферным захватом для леса")
+            +auto("auto5", "Погрузчик ХТЗ Т-150", "с ковшом и вилами для леса")
