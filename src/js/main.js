@@ -114,6 +114,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
   /************************************* */
+
   // TESTIMONIALS PHOTO slider
 
   const swiperTes = new Swiper('.testimonials-photo-slider', {
@@ -129,6 +130,16 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
   /************************************* */
+
+    // TESTIMONIALS LOGO slider
+
+    const swiperLogo = new Swiper('.testimonials-logo-slider', {
+      // Optional parameters
+      slidesPerView: 5,
+      spaceBetween: 16,
+      loop: true,
+    });
+    /************************************* */
 
     // PRODUCTS SLIDER
     let specificSwiperProd = null;
