@@ -114,6 +114,21 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
   /************************************* */
+  // TESTIMONIALS PHOTO slider
+
+  const swiperTes = new Swiper('.testimonials-photo-slider', {
+    // Optional parameters
+    slidesPerView: 4,
+    spaceBetween: 0,
+    loop: true,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '#slider-next-tes',
+      prevEl: '#slider-prev-tes',
+    },
+  });
+  /************************************* */
 
     // PRODUCTS SLIDER
     let specificSwiperProd = null;
