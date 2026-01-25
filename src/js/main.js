@@ -138,6 +138,11 @@ document.addEventListener("DOMContentLoaded", function () {
       slidesPerView: 5,
       spaceBetween: 16,
       loop: true,
+      // autoplay: {
+      //   delay: 2000,
+      //   disableOnInteraction: false,
+      //   speed: 600
+      // },
     });
     /************************************* */
 
