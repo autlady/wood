@@ -75,3 +75,16 @@
 .slider-next {
     right: -2%;
 }
+
+.production-slider .swiper-slide,
+.testimonials-photo-slider .swiper-slide {
+    height: 210px;
+}
+
+.production-slider .swiper-slide img,
+.testimonials-photo-slider .swiper-slide img {
+    border: 10px solid #fff;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
