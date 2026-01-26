@@ -41,14 +41,13 @@
 
 /* ======== reviews text slider ========= */
 
+.reviews-social {
+    position: relative;
+}
 
 .section-subtitle.subtitle-rew  {
     position: relative;
     bottom: -30px;
-}
-
-.reviews-txt-slider .swiper-slide {
-    // width: 100%;
 }
 
 .reviews-txt-slider {
@@ -59,11 +58,6 @@
 .txt-slider-controls  > * {
     flex-shrink: 0;
 }
-
-// .reviews-txt-slider
-// .swiper-pagination {
-//     display: flex;
-// }
 
 .reviews-txt-slider
 .swiper-pagination
@@ -96,7 +90,6 @@
     top: 0;
     right: 0;
     display: flex;
-    // align-items: center;
     gap: 10px;
 }
 
@@ -126,7 +119,13 @@
     width: 88%;
 
     p {
+        overflow: hidden;
         line-height: 1.81;
+        min-height: 120px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4;
+        overflow: hidden;
     }
 
     p + p {
@@ -142,6 +141,13 @@
         text-decoration: underline;
         color: #0477fe;
     }
+}
+
+.btn-wrapper {
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+    z-index: 2;
 }
 
 /* ======== reviews logo slider ========= */
