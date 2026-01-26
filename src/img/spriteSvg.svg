@@ -19,4 +19,22 @@
             <path d="M14.2656 0L17.6333 10.3647H28.5315L19.7147 16.7705L23.0824 27.1353L14.2656 20.7295L5.44885 27.1353L8.81656 16.7705L-0.00022316 10.3647H10.8979L14.2656 0Z" fill="currentColor"/>
         </g>
     </symbol>
+
+	<!-- arrow-right -->
+    <symbol id="svg-right" viewBox="0 0 24 24">
+		<g>
+		<polyline data-name="Right" fill="none" id="Right-2" points="16.4 7 21.5 12 16.4 17" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+		<line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="2.5" x2="19.2" y1="12" y2="12"/>
+		</g>
+    </symbol>
+
+	<!-- arrow-left -->
+    <symbol id="svg-left" viewBox="0 0 24 24">
+		<g>
+		<polyline data-name="Right" fill="none" id="Right-2" points="7.6 7 2.5 12 7.6 17" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+
+		<line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="21.5" x2="4.8" y1="12" y2="12"/>
+		</g>
+    </symbol>
+
 </svg>

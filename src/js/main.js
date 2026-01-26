@@ -1,33 +1,33 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    // Fancybox
-    Fancybox.bind("[data-fancybox]", {
-      Thumbs: false,
-    });
+  // Fancybox
+  Fancybox.bind("[data-fancybox]", {
+    Thumbs: false,
+  });
 
-    // Рейтинг со звездами
-    document.querySelectorAll('[data-rating]').forEach(wrapper => {
-      const ratingValue = parseFloat(wrapper.getAttribute('data-rating')) || 0;
-      const ratingActiveStars = wrapper.querySelector('.js-stars');
+  // Рейтинг со звездами
+  document.querySelectorAll('[data-rating]').forEach(wrapper => {
+    const ratingValue = parseFloat(wrapper.getAttribute('data-rating')) || 0;
+    const ratingActiveStars = wrapper.querySelector('.js-stars');
 
-      if (ratingActiveStars) {
-          const currentWidth = `${ratingValue * (100/5)}%`;
-          ratingActiveStars.style.width = currentWidth;
-      }
+    if (ratingActiveStars) {
+      const currentWidth = `${ratingValue * (100 / 5)}%`;
+      ratingActiveStars.style.width = currentWidth;
+    }
   })
 
-// const toggleMenu = document.querySelector('menu-toggle');
+  // const toggleMenu = document.querySelector('menu-toggle');
 
-// if (toggleMenu){
-//     toggleMenu.addEventListener('click', function(){
+  // if (toggleMenu){
+  //     toggleMenu.addEventListener('click', function(){
 
-//         if(this.classList.contains('active')){
-//             this.classList.remove('active');
-//         }else{
-//             this.classList.add('active');
-//         }
-//     })
-// }
+  //         if(this.classList.contains('active')){
+  //             this.classList.remove('active');
+  //         }else{
+  //             this.classList.add('active');
+  //         }
+  //     })
+  // }
 
   // SELECT
   // Полифилл для метода forEach для NodeList
@@ -115,9 +115,9 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   /************************************* */
 
-  // TESTIMONIALS PHOTO slider
+  // reviews PHOTO slider
 
-  const swiperTes = new Swiper('.testimonials-photo-slider', {
+  const swiperTes = new Swiper('.reviews-photo-slider', {
     // Optional parameters
     slidesPerView: 4,
     spaceBetween: 0,
@@ -131,57 +131,80 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   /************************************* */
 
-    // TESTIMONIALS LOGO slider
+  // reviews LOGO slider
 
-    const swiperLogo = new Swiper('.testimonials-logo-slider', {
-      // Optional parameters
-      slidesPerView: 5,
-      spaceBetween: 16,
-      loop: true,
-      // autoplay: {
-      //   delay: 2000,
-      //   disableOnInteraction: false,
-      //   speed: 600
-      // },
-    });
-    /************************************* */
+  const swiperLogo = new Swiper('.reviews-logo-slider', {
+    // Optional parameters
+    slidesPerView: 5,
+    spaceBetween: 16,
+    loop: true,
+    // autoplay: {
+    //   delay: 2000,
+    //   disableOnInteraction: false,
+    //   speed: 600
+    // },
+  });
+  /************************************* */
 
-    // PRODUCTS SLIDER
-    let specificSwiperProd = null;
+  // reviews LOGO slider
 
-    function initSpecificSwiperProd() {
-      const windowWidth = window.innerWidth;
-      const swiperContainerProd = document.querySelector(".products-slider");
+  const swiperRewTxt = new Swiper('.reviews-txt-slider', {
+    // Optional parameters
+    slidesPerView: 1,
+    spaceBetween: 0,
+    loop: true,
+    navigation: {
+      nextEl: '#slider-next-txt',
+      prevEl: '#slider-prev-txt',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+    },
+    // autoplay: {
+    //   delay: 2000,
+    //   disableOnInteraction: false,
+    //   speed: 600
+    // },
+  });
+  /************************************* */
 
-      if (windowWidth <= 1369 && swiperContainerProd && !specificSwiperProd) {
-        specificSwiperProd = new Swiper(".products-slider", {
-          slidesPerView: 1,
-          spaceBetween: 20,
-          grid: {
-            rows: 2,
+  // PRODUCTS SLIDER
+  let specificSwiperProd = null;
+
+  function initSpecificSwiperProd() {
+    const windowWidth = window.innerWidth;
+    const swiperContainerProd = document.querySelector(".products-slider");
+
+    if (windowWidth <= 1369 && swiperContainerProd && !specificSwiperProd) {
+      specificSwiperProd = new Swiper(".products-slider", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        grid: {
+          rows: 2,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          870: {
+            spaceBetween: 16,
+            slidesPerView: 2,
           },
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-          breakpoints: {
-            870: {
-              spaceBetween: 16,
-              slidesPerView: 2,
-            },
-          },
-        });
-      }
-
-      if (windowWidth > 1369 && specificSwiperProd) {
-        specificSwiperProd.destroy(true, true);
-        specificSwiperProd = null;
-      }
+        },
+      });
     }
 
-    initSpecificSwiperProd();
-    window.addEventListener("resize", initSpecificSwiperProd);
-    /************************************* */
+    if (windowWidth > 1369 && specificSwiperProd) {
+      specificSwiperProd.destroy(true, true);
+      specificSwiperProd = null;
+    }
+  }
+
+  initSpecificSwiperProd();
+  window.addEventListener("resize", initSpecificSwiperProd);
+  /************************************* */
 
 });
 

@@ -1,0 +1,136 @@
+// reviews
+section.reviews
+    .container
+        .reviews__title
+            h2.section-title Отзывы. Наши клиенты про нас.
+        .reviews-videos__title
+            h3.section-subtitle Видео отзывы
+        // reviews VIDEO
+        .reviews-videos.none
+            .reviews-video
+                a(href="https://www.youtube.com/embed/__-vp0g_BhA?si=ATYLxRiZZo-EeydT" data-fancybox="video-reviews").reviews-video__box
+                    img(src="./img/production/video-poster.webp" srcset="./img/production/video-poster@2x.webp 2x" width="397" height="226" alt="img" loading="lazy")
+            .reviews-video
+                a(href="https://www.youtube.com/embed/__-vp0g_BhA?si=ATYLxRiZZo-EeydT" data-fancybox="video-reviews").reviews-video__box
+                    img(src="./img/production/video-poster.webp" srcset="./img/production/video-poster@2x.webp 2x" width="397" height="226" alt="img" loading="lazy")
+            .reviews-video
+                a(href="https://www.youtube.com/embed/__-vp0g_BhA?si=ATYLxRiZZo-EeydT" data-fancybox="video-reviews").reviews-video__box
+                    img(src="./img/production/video-poster.webp" srcset="./img/production/video-poster@2x.webp 2x" width="397" height="226" alt="img" loading="lazy")
+        // reviews PHOTOS
+        .reviews-photo.none
+            .reviews-videos__title
+                h3.section-subtitle Фотографии
+            // PHOTO SLIDER
+            .slider-wrapper
+                .swiper.reviews-photo-slider
+                    .swiper-wrapper
+                        .swiper-slide
+                            img(src="./img/reviews/pilorama01.webp" srcset="./img/reviews/pilorama01@2x.webp 2x" width="309" height="210" alt="img" loading="lazy")
+                        .swiper-slide
+                            img(src="./img/auto/auto1.webp" srcset="./img/auto/auto1@2x.webp 2x" width="309" height="210" alt="img" loading="lazy")
+                        .swiper-slide
+                            img(src="./img/reviews/pilorama02.webp" srcset="./img/reviews/pilorama02@2x.webp 2x" width="309" height="210" alt="img" loading="lazy")
+                        .swiper-slide
+                            img(src="./img/reviews/pilorama03.webp" srcset="./img/reviews/pilorama03@2x.webp 2x" width="309" height="210" alt="img" loading="lazy")
+                        .swiper-slide
+                            img(src="./img/reviews/pilorama04.webp" srcset="./img/reviews/pilorama04@2x.webp 2x" width="309" height="210" alt="img" loading="lazy")
+                // slider controls
+                button.slider-prev#slider-prev-tes
+                    svg.svg-prev
+                        use(href="./img/spriteSvg.svg#svg-prev")
+                button.slider-next#slider-next-tes
+                    svg.svg-next
+                        use(href="./img/spriteSvg.svg#svg-next")
+        h3.section-subtitle.subtitle-rew Реальные отзывы в соц. сетях
+        // REVIEWS TEXT SLIDER
+        .swiper.reviews-txt-slider
+            .txt-slider-controls
+                // slider controls
+                button.slider-txt-prev#slider-prev-txt
+                    svg.svg-arrow
+                        use(href="./img/spriteSvg.svg#svg-left")
+                .swiper-pagination
+                button.slider-txt-next#slider-next-txt
+                    svg.svg-right
+                        use(href="./img/spriteSvg.svg#svg-right")
+            .swiper-wrapper
+                .swiper-slide
+                    // REVIEW
+                    .review
+                        p Решил написать небольшой отзыв о фирме "Дрова72". С февраля 2016г. года покупаю дрова только у данного поставщика. За это время было выполнено 8 заказов из них 6 на березовые дрова в общем объеме 36 кубов и 2 на срезку.Объем и цена всегда соответствовали заказу. Доставка в назначенное время. Один раз была задержка на 2 часа, перезвонили, извинились. Это подтверждает, что фирма ценит своих клиентов.Кому нужны дрова в заявленном объеме и без лишних проблем, рекомендую "Дрова72" как надежного поставщика.
+                        a(href="#!" target="_blank") Проверить отзыв
+                .swiper-slide
+                    // REVIEW
+                    .review
+                        p Решил написать небольшой отзыв о фирме "Дрова72". С февраля 2016г. года покупаю дрова только у данного поставщика. За это время было выполнено 8 заказов из них 6 на березовые дрова в общем объеме 36 кубов и 2 на срезку.Объем и цена всегда соответствовали заказу. Доставка в назначенное время. Один раз была задержка на 2 часа, перезвонили, извинились. Это подтверждает, что фирма ценит своих клиентов.Кому нужны дрова в заявленном объеме и без лишних проблем, рекомендую "Дрова72" как надежного поставщика.
+                        a(href="#!" target="_blank") Проверить отзыв
+                .swiper-slide
+                    // REVIEW
+                    .review
+                        p Решил написать небольшой отзыв о фирме "Дрова72". С февраля 2016г. года покупаю дрова только у данного поставщика. За это время было выполнено 8 заказов из них 6 на березовые дрова в общем объеме 36 кубов и 2 на срезку.Объем и цена всегда соответствовали заказу. Доставка в назначенное время. Один раз была задержка на 2 часа, перезвонили, извинились. Это подтверждает, что фирма ценит своих клиентов.Кому нужны дрова в заявленном объеме и без лишних проблем, рекомендую "Дрова72" как надежного поставщика.
+                        a(href="#!" target="_blank") Проверить отзыв
+                .swiper-slide
+                    // REVIEW
+                    .review
+                        p Решил написать небольшой отзыв о фирме "Дрова72". С февраля 2016г. года покупаю дрова только у данного поставщика. За это время было выполнено 8 заказов из них 6 на березовые дрова в общем объеме 36 кубов и 2 на срезку.Объем и цена всегда соответствовали заказу. Доставка в назначенное время. Один раз была задержка на 2 часа, перезвонили, извинились. Это подтверждает, что фирма ценит своих клиентов.Кому нужны дрова в заявленном объеме и без лишних проблем, рекомендую "Дрова72" как надежного поставщика.
+                        a(href="#!" target="_blank") Проверить отзыв
+                .swiper-slide
+                    // REVIEW
+                    .review
+                        p Решил написать небольшой отзыв о фирме "Дрова72". С февраля 2016г. года покупаю дрова только у данного поставщика. За это время было выполнено 8 заказов из них 6 на березовые дрова в общем объеме 36 кубов и 2 на срезку.Объем и цена всегда соответствовали заказу. Доставка в назначенное время. Один раз была задержка на 2 часа, перезвонили, извинились. Это подтверждает, что фирма ценит своих клиентов.Кому нужны дрова в заявленном объеме и без лишних проблем, рекомендую "Дрова72" как надежного поставщика.
+                        a(href="#!" target="_blank") Проверить отзыв
+
+        .reviews-videos__title
+            h3.section-subtitle Отзывы на независимых площадках
+        // LOGO SLIDER
+        .swiper.reviews-logo-slider.none
+            .swiper-wrapper
+                .swiper-slide
+                    a(href="!#").logo
+                        img(src="./img/logo/yandex.webp" srcset="./img/logo/yandex@2x.webp 2x" width="219" height="73" alt="img")
+                .swiper-slide
+                    a(href="!#").logo
+                        img(src="./img/logo/avito.webp" srcset="./img/logo/avito@2x.webp 2x" width="219" height="73" alt="img")
+                .swiper-slide
+                    a(href="!#").logo
+                        img(src="./img/logo/2gis.webp" srcset="./img/logo/2gis@2x.webp 2x" width="219" height="73" alt="img")
+                .swiper-slide
+                    a(href="!#").logo
+                        img(src="./img/logo/google.webp" srcset="./img/logo/google@2x.webp 2x" width="219" height="73" alt="img")
+                .swiper-slide
+                    a(href="!#").logo
+                        img(src="./img/logo/flamp.webp" srcset="./img/logo/flamp@2x.webp 2x" width="219" height="73" alt="img")
+                .swiper-slide
+                    a(href="!#").logo
+                        img(src="./img/logo/yandex.webp" srcset="./img/logo/yandex@2x.webp 2x" width="219" height="73" alt="img")
+                .swiper-slide
+                    a(href="!#").logo
+                        img(src="./img/logo/avito.webp" srcset="./img/logo/avito@2x.webp 2x" width="219" height="73" alt="img")
+                .swiper-slide
+                    a(href="!#").logo
+                        img(src="./img/logo/2gis.webp" srcset="./img/logo/2gis@2x.webp 2x" width="219" height="73" alt="img")
+                .swiper-slide
+                    a(href="!#").logo
+                        img(src="./img/logo/google.webp" srcset="./img/logo/google@2x.webp 2x" width="219" height="73" alt="img")
+                .swiper-slide
+                    a(href="!#").logo
+                        img(src="./img/logo/flamp.webp" srcset="./img/logo/flamp@2x.webp 2x" width="219" height="73" alt="img")
+        // MEDIA
+        .reviews-media.none
+            .media-text
+                h3.section-subtitle СМИ о нас
+                p.pr-30 Растём и развиваемся. В 2014 году к нам приезжал канал "СТС-Ладья" узнать цены на дрова для телепередачи "Точнее".
+                .accent-block
+                    .reviews-videos__title
+                        h3.section-subtitle.section-subtitle--accent Мошенники!
+                    p Внимание, мошенники предлагают товар от нашего имени с большой скидкой, с условием 100% предоплаты на карту. &nbsp;
+                        a(href="#!") Подробнее в группе.
+            .media-video
+                .reviews-video
+                    a(href="https://www.youtube.com/embed/__-vp0g_BhA?si=ATYLxRiZZo-EeydT" data-fancybox="media").media-video__box
+                        img(src="./img/media.webp" srcset="./img/media@2x.webp 2x" alt="img" loading="lazy")
+
+
+
+
+
