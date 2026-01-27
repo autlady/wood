@@ -213,7 +213,7 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("resize", initSpecificSwiperProd);
   /************************************* */
 
-  // ACCORDEON IN CATALOG SECTION
+// ACCORDEON IN FAQ SECTION
 const accordeonTitle = document.querySelectorAll('[data-name="accordeon-title"]');
 
 accordeonTitle.forEach(function (item) {
@@ -229,6 +229,5 @@ function showAccordeon() {
         loock.style.height = loock.scrollHeight + "px";
     }
 }
-
 });
 
