@@ -213,5 +213,22 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("resize", initSpecificSwiperProd);
   /************************************* */
 
+  // ACCORDEON IN CATALOG SECTION
+const accordeonTitle = document.querySelectorAll('[data-name="accordeon-title"]');
+
+accordeonTitle.forEach(function (item) {
+    item.addEventListener('click', showAccordeon);
+});
+
+function showAccordeon() {
+    this.classList.toggle('show');
+    let loock = this.nextElementSibling;
+    if (loock.style.height){
+    loock.style.height = null;
+    } else {
+        loock.style.height = loock.scrollHeight + "px";
+    }
+}
+
 });
 
