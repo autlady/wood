@@ -4,6 +4,7 @@ section.contacts
         .contacts__title
             h2.section-title Контактная информация
         .contacts-wrapper
+            // LEFT COLUMN
             .contacts-col
                 ul.contacts__list
                     li
@@ -46,6 +47,7 @@ section.contacts
                         a(href="#!" target="_blank").btn.h-55 Написать
                 .contacts-bottom
                     p Перед поездкой к нам - обязательно позвоните, чтобы мы смогли Вас встретить.
+            // RIGHT COLUMN
             .contacts-info-col
                 h4.contacts__subtitle График работы
                 ul.contacts__info
@@ -73,9 +75,13 @@ section.contacts
                 .contacts__btns
                     a(href="#!" target="_blank").btn.btn-accent Яндекс Навигатор
                     a(href="#!" target="_blank").btn.btn-accent2 2ГИС Навигатор
+        // MAP & VIDEO
         .contacts-row
             .contacts__map
+                img(src="./img/contacts/map.webp" srcset="./img/contacts/map@2x.webp 2x" alt="map", width="529", height="375")
             .contacts__video
+                a(href="https://www.youtube.com/embed/__-vp0g_BhA?si=ATYLxRiZZo-EeydT" data-fancybox="video-about").contact__box
+                    img(src="./img/contacts/video-card.webp" srcset="./img/contacts/video-card@2x.webp 2x" width="596" height="339" alt="img" loading="lazy")
 
 
 

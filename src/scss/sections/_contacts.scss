@@ -3,6 +3,7 @@
 }
 
 .contacts-wrapper {
+    margin-bottom: 35px;
     display: flex;
     column-gap: 26px;
 }
@@ -110,4 +111,35 @@
     display: flex;
     column-gap: 30px;
     justify-content: space-between;
+}
+
+.contacts-row {
+    display: flex;
+    column-gap: 37px;
+}
+
+.contacts__map {
+    width: 42.66%;
+    // aspect-ratio: 529/375;
+    // flex-shrink: 0;
+
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 7px;
+    }
+}
+
+.contacts__video {
+    width: 54.19%;
+    // flex-shrink: 0;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 7px;
+    }
 }
