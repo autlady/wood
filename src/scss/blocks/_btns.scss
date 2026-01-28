@@ -83,3 +83,29 @@
         background-color: lighten($color: #584340, $amount: 5%);;
     }
 }
+
+.btn-accent {
+    min-width: 240px;
+    height: 55px;
+    background-color: #f8ee00;
+    line-height: 55px;
+    color: #000;
+    font-weight: 700;
+
+    &:hover {
+        background-color: lighten($color: #f8ee00, $amount: 5%);;
+    }
+}
+
+.btn-accent2 {
+    min-width: 240px;
+    height: 55px;
+    background-color:  #b5c94d;
+    line-height: 55px;
+    color: #fff;
+    font-weight: 700;
+
+    &:hover {
+        background-color: lighten($color: #b5c94d, $amount: 5%);;
+    }
+}
