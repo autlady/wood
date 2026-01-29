@@ -5,7 +5,7 @@ mixin product(obj)
             if obj.accent
                 span (!{obj.accent})
         .product-card__img
-            img(src="./img/products/" + obj.img + ".webp" srcset="./img/products/" + obj.img + "@2x.webp 2x" width height alt="product" loading="lazy")
+            img(src="./img/products/" + obj.img + ".webp" srcset="./img/products/" + obj.img + "@2x.webp 2x" width="318" height="181" alt="product" loading="lazy")
         ul.product-card__list
             each item in obj.list
                 li.product-card__row

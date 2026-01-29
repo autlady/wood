@@ -1,5 +1,8 @@
+/* ======== rating ========= */
+
 .rating {
-    padding-block: 50px;
+    padding-top: 62px;
+    padding-bottom: 90px;
 }
 
 .section-wrapper {
@@ -8,6 +11,7 @@
 }
 
 .rating-wrapper {
+    margin-left: 83px;
     display: flex;
     flex-direction: column;
     gap: 35px;
@@ -18,7 +22,6 @@
     font-weight: 700;
     font-size: 23px;
     line-height: 1.43;
-    // text-align: center;
 }
 
 .rating-row {
@@ -37,7 +40,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    padding-inline: 15px;
+    padding-inline: 20px;
     border-radius: 5px;
     width: 415px;
     height: 60px;
