@@ -1,7 +1,10 @@
 /* ======== reviews video ========= */
+.reviews__title .section-title {
+margin-bottom: 60px;
+}
 
 .reviews-videos {
-    margin-bottom: 30px;
+    margin-bottom: 53px;
     display: flex;
     align-items: center;
     column-gap: 24px;
@@ -22,7 +25,7 @@
 }
 
 .reviews-videos__title {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 /* ======== reviews photo slider ========= */
