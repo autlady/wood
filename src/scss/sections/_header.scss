@@ -1,16 +1,20 @@
-.header-top {
-    // padding-block: 5px;
-}
-
+/* ======== header top ========= */
 .header-wrapper {
     display: flex;
-    column-gap: 45px;
+    column-gap: 52px;
 }
 
 .header-contacts, .header-btns {
     display: flex;
-    column-gap: 25px;
     align-items: center;
+}
+
+.header-contacts {
+    column-gap: 35px;
+}
+
+.header-btns {
+    column-gap: 27px;
 }
 
 .header-row {
@@ -51,11 +55,11 @@
     }
 }
 
+/* ======== header menu ========= */
 .header-menu {
-    padding-block: 24px;
+    padding-block: 19px;
     background-color: var(--accent-color);
 }
-
 
 .menu {
     display: flex;
