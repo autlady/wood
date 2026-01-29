@@ -13,19 +13,16 @@
     max-width: 620px;
 }
 
-.about__title {
-    margin-bottom: 30px;
-}
-
 .about__text {
-    margin-bottom: 40px;
+    margin-bottom: 46px;
     font-size: 17px;
     line-height: 1.94;
     color: #fff;
+    letter-spacing: 1px;
 }
 
 .about__text p + p {
-    margin-top: 15px;
+    margin-top: 22px;
 }
 
 .about__img {
@@ -34,7 +31,7 @@
     height: 623px;
     position: absolute;
     bottom: 0;
-    left: 56%;
+    left: 54%;
 }
 
 .about__img img {

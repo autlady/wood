@@ -1,5 +1,6 @@
 .benefit-card {
     width: 31.5%;
+    height: 227px;
     position: relative;
     padding: 80px 20px 20px 20px;
     border: 2px solid rgba(0, 0, 0, 0.08);
@@ -9,13 +10,14 @@
 
 .benefit-card:nth-child(5n + 1), .benefit-card:nth-child(5n + 2) {
     width: 45.4%;
+    height: 284px;
 }
 
 .benefit-card__img {
     position: absolute;
     z-index: 2;
     top: 0;
-    left: 80px;
+    left: 75px;
     transform: translate(-50%, -50%);
     display: flex;
     justify-content: center;
@@ -27,7 +29,7 @@
 }
 
 .benefit-card__title {
-    margin-bottom: 18px;
+    margin-bottom: 4px;
     font-family: var(--second-family);
     font-weight: 700;
     font-size: 20px;

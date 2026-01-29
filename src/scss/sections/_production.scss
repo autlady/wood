@@ -1,5 +1,9 @@
+.production {
+    padding-block: 121px;
+}
+
 .production__title {
-    margin-bottom: 40px;
+    margin-bottom: 85px;
 }
 
 .production-videos {
@@ -9,9 +13,8 @@
     column-gap: 47px;
 }
 
-.production-video__title,
-.production-photo__title {
-    margin-bottom: 20px;
+.production__subtitle {
+    margin-bottom: 27px;
 }
 
 .production-video__box {

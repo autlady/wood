@@ -1,9 +1,10 @@
 .delivery {
-    padding-bottom: 70px;
+    margin-bottom: 100px;
 }
 
 .delivery-wrapper {
     position: relative;
+    margin-bottom: 75px;
 }
 
 .delivery-col {
@@ -12,9 +13,9 @@
 
 .delivery__text {
     max-width: 620px;
-    margin-bottom: 30px;
+    margin-bottom: 42px;
     font-size: 17px;
-    line-height: 1.94;
+    line-height: 1.99;
 
     p + p {
         margin-top: 20px;
@@ -26,5 +27,41 @@
     top: 0;
     right: 0;
     bottom: 0;
+}
+
+.delivery__subtitle {
+    margin-bottom: 40px;
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.districts-wrapper {
+    margin-bottom: 38px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    gap: 18px;
+}
+
+.district {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+    border-radius: 5px;
+    background: rgba(88, 67, 64, 0.12);
+    font-size: 17px;
+}
+
+.district.district-wide {
+    grid-column: span 4 / span 4;
+    grid-column-start: 2;
+    grid-row-start: 7;
+    text-align: center;
+
+    a:hover {
+        text-decoration: underline;
+    }
 }
 
