@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+
   // Fancybox
   Fancybox.bind("[data-fancybox]", {
     Thumbs: false,
@@ -19,6 +20,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const bodyEl = document.body;
    const btnMenu = document.querySelector('.menu-open');
    const mobileMenu = document.querySelector('.menu');
+
+
 
   function closeMobileMenu() {
     btnMenu.classList.remove('active');
@@ -40,6 +43,33 @@ document.addEventListener("DOMContentLoaded", function () {
       openMobileMenu();
     }
    });
+
+   function removeActive() {
+    btnMenu.classList.remove('active');
+    bodyEl.classList.remove('lock');
+    mobileMenu.style.height = 0;
+  }
+
+    // поведение ссылок в хедере при клике
+
+    const menuItems = mobileMenu.querySelectorAll('a');
+    // const menu = document.querySelector('.header-nav-wrapper');
+
+    menuItems.forEach(function (item) {
+        item.addEventListener('click', function () {
+            for (el of menuItems) {
+              removeActive();
+            }
+        });
+    }
+    );
+
+  resize();
+
+  $(window).resize(function() {
+      resize();
+      removeActive();
+  });
 
 
 
