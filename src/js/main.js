@@ -14,20 +14,34 @@ document.addEventListener("DOMContentLoaded", function () {
       const currentWidth = `${ratingValue * (100 / 5)}%`;
       ratingActiveStars.style.width = currentWidth;
     }
-  })
+  });
 
-  // const toggleMenu = document.querySelector('menu-toggle');
+  const bodyEl = document.body;
+   const btnMenu = document.querySelector('.menu-open');
+   const mobileMenu = document.querySelector('.menu');
 
-  // if (toggleMenu){
-  //     toggleMenu.addEventListener('click', function(){
+  function closeMobileMenu() {
+    btnMenu.classList.remove('active');
+    mobileMenu.style.height = 0;
+    bodyEl.classList.remove('lock');
+  }
 
-  //         if(this.classList.contains('active')){
-  //             this.classList.remove('active');
-  //         }else{
-  //             this.classList.add('active');
-  //         }
-  //     })
-  // }
+  function openMobileMenu() {
+    btnMenu.classList.add('active');
+    let menuHeight = mobileMenu.scrollHeight + 20;
+    mobileMenu.style.height = menuHeight + 'px';
+    bodyEl.classList.add('lock');
+  }
+
+   btnMenu.addEventListener('click', () => {
+    if (btnMenu.classList.contains('active')) {
+      closeMobileMenu();
+    } else {
+      openMobileMenu();
+    }
+   });
+
+
 
   // SELECT
   // Полифилл для метода forEach для NodeList

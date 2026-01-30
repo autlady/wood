@@ -14,13 +14,16 @@ header.header
                      a(href="#!" target="_blank").contact-link
                         img(src="./img/icons/partners.webp", alt="contact", width="20" height="20")
                         span Юридическим лицам
-                  .header-col
-                     a(href="tel:+73452606698" target="_blank").contact-link
-                        img(src="./img/icons/telephone.webp", alt="icon", width="20" height="20")
-                        span +7 (3452) 60-66-98
-                     a(href="tel:+79292696698" target="_blank").contact-link
-                        img(src="./img/icons/mobile.webp", alt="icon", width="20" height="20")
-                        span +7 (929) 269-66-98
+                  .header-col-mob
+                     a(href="#!").header-logo-mob
+                        img(src="./img/logo.webp" srcset="./img/logo@2x.webp" alt="logo" width="67" height="90" loading="lasy")
+                     .links-wrapper-mob
+                        a(href="tel:+73452606698" target="_blank").contact-link
+                           img(src="./img/icons/telephone.webp", alt="icon", width="20" height="20")
+                           span +7 (3452) 60-66-98
+                        a(href="tel:+79292696698" target="_blank").contact-link
+                           img(src="./img/icons/mobile.webp", alt="icon", width="20" height="20")
+                           span +7 (929) 269-66-98
                .header-btns
                   .social-block
                      a(href="#!" target="_blank" rel="noopener noreferrer").social-link
@@ -33,6 +36,7 @@ header.header
    // HEADER MENU
    .header-menu
       .container
+         button.menu-open Меню сайта
          nav.menu
             a(href="#products") Дрова
             a(href="#products") Пиломатериалы

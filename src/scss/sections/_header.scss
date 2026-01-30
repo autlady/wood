@@ -1,12 +1,73 @@
 /* ======== header top ========= */
+.header-top {
+    @media (max-width: 767px) {
+        padding-top: 5px;
+        padding-bottom: 25px;
+    }
+}
+
+.header-row {
+    display: flex;
+
+    @media (max-width: 767px) {
+        flex-direction: column;
+    }
+ }
+
 .header-wrapper {
     display: flex;
     column-gap: 52px;
+
+    @media (max-width: 767px) {
+        width: 100%;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+}
+
+ .links-wrapper-mob {
+    @media (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.header-logo {
+    @media (max-width: 767px) {
+       display: none;
+    }
+}
+
+.header-col-mob {
+    @media (max-width: 767px) {
+       width: 100%;
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+    }
+}
+
+.header-logo-mob {
+    display: none;
+
+    @media (max-width: 767px) {
+        display: block;
+     }
+}
+
+.header-col {
+    @media (max-width: 1023px) {
+        display: none;
+    }
 }
 
 .header-contacts, .header-btns {
     display: flex;
     align-items: center;
+
+    @media (max-width: 767px) {
+       justify-content: space-between;
+    }
 }
 
 .header-contacts {
@@ -57,8 +118,13 @@
 
 /* ======== header menu ========= */
 .header-menu {
+    // position: relative;
     padding-block: 19px;
     background-color: var(--accent-color);
+
+    @media (max-width: 1023px) {
+        padding-block: 0;
+    }
 }
 
 .menu {
@@ -74,5 +140,41 @@
         &:hover {
             text-shadow: 0 0 1px #fff;
         }
+    }
+
+    @media (max-width: 1023px) {
+        height: 0;
+        // padding-top: 10px;
+        // padding-bottom: 25px;
+        flex-direction: column;
+        row-gap: 20px;
+        z-index: 3;
+        transition: 0.3s;
+    }
+
+    // @media (max-width: 1023px) {
+    //     position: fixed;
+    //     position: absolute;
+    //     top: 0;
+    //     right: 0;
+    //     left: 0;
+    //     overflow: hidden;
+    //     background-color: #fff;
+    //     z-index: 3;
+    //     transition: 0.3s;
+    // }
+}
+
+.menu-open {
+    display: none;
+    width: 100%;
+    height: 45px;
+    background-color: var(--accent-color);
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+
+    @media (max-width: 1023px) {
+        display: block;
     }
 }
