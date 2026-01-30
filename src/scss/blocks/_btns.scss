@@ -36,6 +36,7 @@
     line-height: 60px;
     background-color: #0477fe;
     font-weight: 700;
+    padding: 0 45px;
 
     &:hover {
         background-color: lighten($color: #0477fe, $amount: 5%);;

@@ -137,19 +137,15 @@ document.addEventListener("DOMContentLoaded", function () {
     // Optional parameters
     slidesPerView: 5,
     spaceBetween: 16,
-    a11y: false,
-    freeMode: true,
-    speed: 2000,
-    loop: true,
-    autoplay: {
-        delay: 0.0,
-        disableOnInteraction: false,
-    },
+    // a11y: false,
+    // freeMode: true,
+    // speed: 2000,
+    // loop: true,
     // autoplay: {
-    //   delay: 2000,
-    //   disableOnInteraction: false,
-    //   speed: 600
+    //     delay: 0.0,
+    //     disableOnInteraction: false,
     // },
+
   });
   /************************************* */
 

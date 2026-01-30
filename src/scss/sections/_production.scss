@@ -84,12 +84,13 @@
 
 .production-slider .swiper-slide,
 .reviews-photo-slider .swiper-slide {
+    padding: 10px;
     height: 210px;
+    background-color: #fff;
 }
 
 .production-slider .swiper-slide img,
 .reviews-photo-slider .swiper-slide img {
-    border: 10px solid #fff;
     width: 100%;
     height: 100%;
     object-fit: cover;
