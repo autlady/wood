@@ -44,12 +44,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
    });
 
-   function removeActive() {
-    btnMenu.classList.remove('active');
-    bodyEl.classList.remove('lock');
-    mobileMenu.style.height = 0;
-  }
-
     // поведение ссылок в хедере при клике
 
     const menuItems = mobileMenu.querySelectorAll('a');
@@ -64,12 +58,12 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     );
 
-  resize();
+  // resize();
 
-  $(window).resize(function() {
-      resize();
-      removeActive();
-  });
+  // $(window).resize(function() {
+  //     resize();
+  //     removeActive();
+  // });
 
 
 
