@@ -4,13 +4,24 @@
 
 .production__title {
     margin-bottom: 85px;
+
+    @media (max-width: 1200px) {
+        margin-bottom: 30px;
+    }
 }
 
 .production-videos {
     margin-bottom: 30px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     column-gap: 47px;
+
+    @media (max-width: 1032px) {
+        align-items: flex-start;
+        flex-direction: column;
+        row-gap: 50px;
+    }
 }
 
 .production__subtitle {
@@ -18,9 +29,9 @@
 }
 
 .production-video__box {
-    flex-shrink: 0;
     width: 596px;
     height: 339px;
+    flex-shrink: 0;
     border-radius: 7px;
     overflow: hidden;
 
@@ -29,16 +40,44 @@
         height: 100%;
         object-fit: cover;
     }
+
+    @media (max-width: 1310px) {
+        width: remy(596);
+        height: remy(339);
+    }
+
+    @media (max-width: 1032px) {
+        width: 596px;
+        height: 339px;
+    }
+
+    @media (max-width: 767px) {
+        width: 355px;
+        height: 202px;
+    }
+    @media (max-width: 380px) {
+        width: 100%;
+    }
 }
 
 .slider-wrapper {
     position: relative;
-    // padding: 0 80px;
 }
 
-// .production-slider {
-//     width: 1420px;
-// }
+.swiper.production-slider {
+    @media (max-width: 1320px) {
+        width: 80%;
+    }
+
+    @media (max-width: 664px) {
+        width: 60%;
+    }
+
+    @media (max-width: 480px) {
+        width: 100%;
+    }
+
+}
 
 .swiper-wrapper {
     width: 100%;
@@ -47,8 +86,6 @@
 .swiper-slide {
     width: 309px;
     display: flex;
-    // align-items: center;
-    // justify-content: center;
 }
 
 .slider-prev,
@@ -72,14 +109,39 @@
         background-color: lighten($color: #44a603, $amount: 5%);
         ;
     }
+
+    @media (max-width: 480px) {
+        width: 30px;
+        height: 30px;
+
+        svg {
+            width: 20px;
+            height: 20px;
+        }
+    }
 }
 
 .slider-prev {
     left: -2%;
+
+    @media (max-width: 1320px) {
+        left: 6%;
+    }
+    @media (max-width: 664px) {
+        left: 1%;
+    }
 }
 
 .slider-next {
     right: -2%;
+
+    @media (max-width: 1320px) {
+        right: 6%;
+    }
+
+    @media (max-width: 664px) {
+        right: 1%;
+    }
 }
 
 .production-slider .swiper-slide,
@@ -87,6 +149,10 @@
     padding: 10px;
     height: 210px;
     background-color: #fff;
+
+    @media (max-width: 664px) {
+        padding: 0;
+    }
 }
 
 .production-slider .swiper-slide img,
