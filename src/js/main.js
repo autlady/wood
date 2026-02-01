@@ -65,8 +65,6 @@ document.addEventListener("DOMContentLoaded", function () {
   //     removeActive();
   // });
 
-
-
   // SELECT
   // Полифилл для метода forEach для NodeList
   if (window.NodeList && !NodeList.prototype.forEach) {
@@ -187,7 +185,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   /************************************* */
 
-  // reviews LOGO slider
+  // reviews text slider
 
   const swiperRewTxt = new Swiper('.reviews-txt-slider', {
     // Optional parameters
@@ -221,15 +219,16 @@ document.addEventListener("DOMContentLoaded", function () {
       specificSwiperProd = new Swiper(".products-slider", {
         slidesPerView: 1,
         spaceBetween: 20,
-        grid: {
-          rows: 2,
-        },
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
         },
+        navigation: {
+          nextEl: '#slider-next-pr',
+          prevEl: '#slider-prev-pr',
+        },
         breakpoints: {
-          870: {
+          926: {
             spaceBetween: 16,
             slidesPerView: 2,
           },

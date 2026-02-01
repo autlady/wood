@@ -1,11 +1,22 @@
 // PRODUCTS
-section.products(id="products").none
+section.products(id="products")
     .container
         .products__title
             h2.section-title Цены на дрова
         .products-slider-wrapper
             // SLIDER
             .swiper.products-slider
+                .products-slider-top
+                    span Листай вправо / влево
+                    .products-slider-controls
+                        // slider controls
+                        button.slider-pr-prev#slider-prev-pr
+                            svg.svg-arrow
+                                use(href="./img/spriteSvg.svg#svg-left")
+                        .swiper-pagination
+                        button.slider-pr-next#slider-next-pr
+                            svg.svg-right
+                                use(href="./img/spriteSvg.svg#svg-right")
                 .swiper-wrapper
                     .swiper-slide
                         +product({
@@ -19,7 +30,6 @@ section.products(id="products").none
                                 {quantity: '5 куб', info: '(1 куб 2920р.)', price: '14 600 р.'},
                                 {quantity: '6 куб', info: '(1 куб 2900р.)', price: '17 400 р.'},
                             ],
-
                         })
                     .swiper-slide
                         +product({

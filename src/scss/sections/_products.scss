@@ -7,19 +7,20 @@
     margin-bottom: 50px;
 }
 
-.products-slider {
+/* ======== products slider ========= */
+
+.swiper.products-slider {
     @media (max-width: 1369px) {
-        height: 630px;
-        padding-bottom: 54px;
+        width: 810px;
     }
-
-    @media (max-width: 870px) {
-        height: 570px;
-        padding-bottom: 10px;
+    @media (max-width: 925px) {
+        width: 380px;
     }
-
-    @media (max-width: 767px) {
-        height: 683px;
+    @media (max-width: 440px) {
+        width: 355px;
+    }
+    @media (max-width: 375px) {
+        width: 100%;
     }
 }
 
@@ -34,10 +35,6 @@
         align-items: stretch;
     }
 
-    @media (min-width: 1819px) {
-        column-gap: 50px;
-        row-gap: 30px;
-    }
 }
 
 .products-slider .swiper-slide {
@@ -49,15 +46,79 @@
     }
 
     @media (max-width: 1369px) {
-        height: 268px!important;
+        // width: 380px!important;
+        height: 544px!important;
+    }
+}
+
+.products-slider-top {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    column-gap: 15px;
+
+    span {
+        margin-bottom: 15px;
+        font-size: 15px;
     }
 
-    @media (max-width: 1023px) {
-        height: 252px!important;
+    @media (min-width: 1370px) {
+        display: none;
+    }
+}
+
+
+.products-slider-controls {
+    display: flex;
+    column-gap: 44px;
+}
+
+.products-slider
+.swiper-pagination
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(68, 166, 3, 0.8);
+}
+
+.products-slider
+.swiper-pagination {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: auto;
+    left: auto;
+    width: unset;
+}
+
+.products-slider
+.swiper-pagination
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: var(--accent-color);
+}
+
+.slider-pr-prev,
+.slider-pr-next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 35px;
+    cursor: pointer;
+
+    svg {
+        width: 20px;
+        height: 23px;
+        color:  #000;
     }
 
-    @media (max-width: 767px) {
-        height: 310px!important;
-        padding-inline: 13px;
+    &:hover {
+        svg {
+            color:  var(--accent-color);
+        }
     }
 }

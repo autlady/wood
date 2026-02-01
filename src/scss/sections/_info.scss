@@ -9,4 +9,9 @@
 .info__text {
     font-size: 17px;
     line-height: 1.94;
+
+    @media (max-width: 767px) {
+        font-size: 15px;
+        line-height: 1.87;
+      }
 }
