@@ -7,10 +7,20 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+
+    @media (max-width: 1210px) {
+          padding-bottom: 0px;
+
+    }
 }
 
 .about-wrapper {
     max-width: 620px;
+
+    @media (max-width: 767px) {
+        max-width: 100%;
+        width: 100%;
+    }
 }
 
 .about__text {
@@ -27,10 +37,21 @@
 .about__img {
     position: absolute;
     width: 555px;
-    height: 623px;
-    position: absolute;
     bottom: 0;
     left: 54%;
+
+    @media (max-width: 1210px) {
+        position: relative;
+        top: 55px;
+        left: 10px;
+    }
+    @media (max-width: 767px) {
+        margin-left: -15px;
+        width: 375px;
+    }
+    @media (max-width: 380px) {
+        margin-left: -40px;
+    }
 }
 
 .about__img img {

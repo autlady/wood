@@ -157,10 +157,6 @@ select:-webkit-autofill:focus {
   color: #fff;
   text-transform: uppercase;
 
-  @media (max-width: 1479px) {
-    font-size: remy(50);
-  }
-
   @media (max-width: 1023px) {
     font-size: 30px;
     line-height: 1.5;
@@ -178,11 +174,6 @@ select:-webkit-autofill:focus {
     color: var(--accent-color);
   }
 
-  @media (max-width: 1479px) {
-    margin-bottom: remy(50);
-    font-size: remy(40);
-  }
-
   @media (max-width: 1023px) {
     margin-bottom: 0;
     font-size: 30px;
@@ -193,14 +184,9 @@ select:-webkit-autofill:focus {
   margin-bottom: 27px;
   color: #fff;
 
-  @media (max-width: 1479px) {
-    margin-bottom: remy(27);
+  @media (max-width: 1023px) {
+    margin-bottom: 27px;
   }
-
-  @media (max-width: 767px) {
-    margin-bottom: 0;
-  }
-
 }
 
 .section-subtitle--accent {
