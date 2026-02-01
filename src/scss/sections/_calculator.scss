@@ -12,12 +12,18 @@
     padding: 22px 20px 24px;
     border-radius: 5px;
     background: rgba(68, 166, 3, 0.17);
+
+    @media (max-width: 767px) {
+        padding-top: 44px;
+      }
 }
 
 .dropdowns {
     margin-bottom: 21px;
     display: flex;
+    flex-wrap: wrap;
     column-gap: 21px;
+    row-gap: 19px;
 }
 
 .dropdown {
@@ -97,12 +103,22 @@
     font-weight: 700;
     font-size: 17px;
     line-height: 1.18;
+
+    @media (max-width: 767px) {
+        line-height: 1.47;
+      }
 }
 
 .calculator-footer {
     display: flex;
     align-items: center;
     column-gap: 28px;
+
+    @media (max-width: 767px) {
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 20px;
+      }
 }
 
 .calculator__result {
