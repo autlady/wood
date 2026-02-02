@@ -1,17 +1,28 @@
 /* ======== benefit card ========= */
 .benefit-card {
-    width: 31.5%;
+    width: 564px!important;
+    // width: 31.5%;
     height: 227px;
     position: relative;
     padding: 80px 20px 20px 20px;
     border: 2px solid rgba(0, 0, 0, 0.08);
     border-radius: 10px;
     background-color: rgba(217, 217, 217, 0.15);
+
+    // @media (max-width: 1479px) {
+    //     height: remy(227);
+    //     padding: remy(80) remy(20) remy(20) remy(20);
+    //     border-radius: remy(10);
+    // }
 }
 
 .benefit-card:nth-child(5n + 1), .benefit-card:nth-child(5n + 2) {
-    width: 45.4%;
+    // width: 45.4%;
     height: 284px;
+
+    // @media (max-width: 1479px) {
+    //     height: remy(284);
+    // }
 }
 
 .benefit-card__img {
@@ -27,6 +38,19 @@
     height: 105px;
     border-radius: 50%;
     background-color: var(--accent-color);
+
+    // @media (max-width: 1479px) {
+    //     left: remy(75);
+    //     width: remy(105);
+    //     height: remy(105);
+    // }
+
+    img {
+        // @media (max-width: 1479px) {
+        //     width: remy(60);
+        //     height: remy(60);
+        // }
+    }
 }
 
 .benefit-card__title {
@@ -36,8 +60,17 @@
     font-size: 20px;
     line-height: 1.75;
     color: var(--accent-color);
+
+    // @media (max-width: 1479px) {
+    //     margin-bottom: remy(4);
+    //     font-size: remy(20);
+    // }
 }
 
 .benefit-card__text {
     line-height: 1.81;
+
+    // @media (max-width: 1479px) {
+    //     font-size: remy(16);
+    // }
 }

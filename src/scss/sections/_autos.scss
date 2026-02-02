@@ -1,5 +1,17 @@
 .autos {
   padding-bottom: 118px;
+
+  .section-title {
+    @media (max-width: 767px) {
+      color: #fff;
+    }
+  }
+
+  @media (max-width: 767px) {
+    padding-bottom: 0px;
+    padding-top: 80px;
+    background-color:  #584340;
+  }
 }
 
 .autos-wrapper {
@@ -7,6 +19,18 @@
   display: flex;
   flex-wrap: wrap;
   gap: 60px;
+
+  @media (max-width: 1479px) {
+    padding-inline: 15px;
+    gap: remy(60);
+
+    @media (max-width: 767px) {
+      padding-inline: 0;
+      flex-direction: column;
+      row-gap: 40px;
+      margin-bottom: 50px;
+  }
+}
 }
 
 .autos__text {
@@ -18,78 +42,79 @@
   p + p {
       margin-top: 20px;
   }
+
+  @media (max-width: 899px) {
+    max-width: 100%;
+
+    @media (max-width: 767px) {
+      color: #fff;
+    }
+}
 }
 
 .autos-col {
   margin-top: 15px;
   width: 33.8%;
+
+  @media (max-width: 1479px) {
+    margin-top: 0;
+  }
+
+  @media (max-width: 899px) {
+    margin-bottom: 40px;
+    width: 70%;
+
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+}
 }
 
 .autos-content {
+  position: relative;
   display: flex;
   column-gap: 97px;
-}
 
-.autos__text {
+  @media (max-width: 899px) {
+    flex-direction: column;
+    row-gap: 40px;
+  }
+
+  @media (max-width: 767px) {
+    display: block;
+  }
 
 }
 
 .autos__bg img {
   border-radius: 7px;
   box-shadow: 0 0 40px 1px rgba(0, 0, 0, 0.25);
+
+  @media (max-width: 767px) {
+    box-shadow: none;
+    position: relative;
+    z-index: 2;
+  }
 }
 
+.autos__bg {
+  @media (max-width: 1479px) {
+    padding-inline: 15px;
+  }
 
-// .auto-wrapper {
-//     display: flex;
-//     flex-wrap: wrap;
-//     gap: 20px;
-//     justify-content: center;
-//     max-width: 1200px;
-//     margin: 0 auto;
-//   }
+  @media (max-width: 767px) {
+    padding-inline: 0;
+    position: relative;
 
-//   /* Первый ряд - 3 карточки */
-//   .auto:nth-child(1),
-//   .auto:nth-child(2),
-//   .auto:nth-child(3) {
-//     flex: 1 1 calc(33.333% - 40px);
-//     min-width: 250px;
-//   }
-
-//   /* Второй ряд - 2 карточки */
-//   .auto:nth-child(4),
-//   .auto:nth-child(5) {
-//     flex: 1 1 calc(50% - 30px);
-//     min-width: 300px;
-//   }
-
-//   .auto {
-//     background: white;
-//     border-radius: 10px;
-//     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-//     overflow: hidden;
-//     transition: transform 0.3s;
-//   }
-
-//   .auto:hover {
-//     transform: translateY(-5px);
-//   }
-
-//   .auto img {
-//     width: 100%;
-//     height: 200px;
-//     object-fit: cover;
-//   }
-
-  // .title {
-  //   font-weight: bold;
-  //   padding: 15px 15px 0;
-  //   margin: 0;
-  // }
-
-  // .text {
-  //   padding: 0 15px 15px;
-  //   color: #666;
-  //   margin: 5px 0 0;
-  // }
+    &::after {
+      content: "";
+      position: absolute;
+      left: -15px;
+      right: -15px;
+      height: 50%;
+      bottom: -1px;
+      z-index: 1;
+      background-color: #fff;
+    }
+  }
+}

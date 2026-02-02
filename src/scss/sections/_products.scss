@@ -46,12 +46,11 @@
     }
 
     @media (max-width: 1369px) {
-        // width: 380px!important;
         height: 544px!important;
     }
 }
 
-.products-slider-top {
+.products-slider-top, .benefits-slider-top {
     margin-bottom: 15px;
     display: flex;
     align-items: center;
@@ -69,12 +68,16 @@
 }
 
 
-.products-slider-controls {
+.products-slider-controls,
+.benefits-slider-controls {
     display: flex;
     column-gap: 44px;
 }
 
 .products-slider
+.swiper-pagination
+.swiper-pagination-bullet,
+.benefits-slider
 .swiper-pagination
 .swiper-pagination-bullet {
     width: 10px;
@@ -83,6 +86,8 @@
 }
 
 .products-slider
+.swiper-pagination,
+.benefits-slider
 .swiper-pagination {
     position: relative;
     display: flex;
@@ -96,6 +101,9 @@
 }
 
 .products-slider
+.swiper-pagination
+.swiper-pagination-bullet.swiper-pagination-bullet-active,
+.benefits-slider
 .swiper-pagination
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
     background-color: var(--accent-color);

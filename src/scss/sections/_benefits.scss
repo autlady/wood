@@ -1,16 +1,49 @@
 .benefits {
     padding-bottom: 120px;
+
+    @media (max-width: 767px) {
+        padding-top: 170px;
+    }
 }
 
 .benefits__title {
     margin-bottom: 137px;
+
+    @media (max-width: 1479px) {
+        margin-bottom: remy(137);
+    }
 }
 
-.benefits-wrapper {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    column-gap: 30px;
-    row-gap: 80px;
+.benefits-slider .swiper-wrapper {
+    padding-top: 60px;
+    @media (min-width: 1370px) {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        column-gap: 30px;
+        row-gap: 80px;
+    }
+
+.benefits-slider .swiper-wrapper .swiper-slide {
+    @media (min-width: 1370px) {
+        // width: auto!important;
+        width: 564px!important;
+        margin-right: 0!important;
+        height: auto;
+        display: flex;
+    }
+
+    @media (max-width: 1369px) {
+        height: 293px!important;
+    }
+}
+
+
+
+
+    //     @media (max-width: 1479px) {
+    //     column-gap: remy(30);
+    //     row-gap: remy(80);
+    // }
 }
 

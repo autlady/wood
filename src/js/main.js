@@ -58,13 +58,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     );
 
-  // resize();
-
-  // $(window).resize(function() {
-  //     resize();
-  //     removeActive();
-  // });
-
   // SELECT
   // Полифилл для метода forEach для NodeList
   if (window.NodeList && !NodeList.prototype.forEach) {
@@ -278,5 +271,44 @@ function showAccordeon() {
         loock.style.height = loock.scrollHeight + "px";
     }
 }
+  // BENEFITS SLIDER
+  let specificSwiperBen = null;
+
+  function initSpecificSwiperBen() {
+    const windowWidth = window.innerWidth;
+    const swiperContainerBen = document.querySelector(".benefits-slider");
+
+    if (windowWidth <= 1369 && swiperContainerBen && !specificSwiperBen) {
+      specificSwiperBen = new Swiper(".benefits-slider", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '#slider-next-ben',
+          prevEl: '#slider-prev-ben',
+        },
+        breakpoints: {
+          767: {
+            spaceBetween: 16,
+            slidesPerView: 2,
+          },
+        },
+      });
+    }
+
+    if (windowWidth > 1369 && specificSwiperBen) {
+      specificSwiperBen.destroy(true, true);
+      specificSwiperBen = null;
+    }
+  }
+
+  initSpecificSwiperBen();
+  window.addEventListener("resize", initSpecificSwiperBen);
+  /************************************* */
+
+
 });
 

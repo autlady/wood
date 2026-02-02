@@ -57,6 +57,20 @@
         height: 73px;
         position: relative;
         top: -20px;
+
+        @media (max-width: 374px) {
+            width: remy2(93);
+            height: remy2(73);
+            top: remy2(-20);
+        }
+    }
+
+    @media (max-width: 374px) {
+        width: remy2(310);
+        height: remy2(56);
+        column-gap: remy2(20);
+        padding: 0 remy2(15);
+        line-height: remy2(56);
     }
 }
 
