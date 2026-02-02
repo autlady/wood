@@ -174,10 +174,15 @@ select:-webkit-autofill:focus {
     color: var(--accent-color);
   }
 
-  @media (max-width: 1023px) {
-    margin-bottom: 0;
-    font-size: 30px;
-  }
+    @media (max-width: 1479px) {
+        font-size: remy(40);
+        margin-bottom: remy(50);
+    }
+
+    @media (max-width: 1023px) {
+      font-size: 30px;
+      margin-bottom: 40px;
+    }
 }
 
 .section-title--white {
