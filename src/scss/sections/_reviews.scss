@@ -35,8 +35,6 @@ margin-bottom: 60px;
     width: 100%;
     flex-shrink: 0;
     border-radius: 7px;
-    // width: 397px;
-    // height: 226px;
     overflow: hidden;
       aspect-ratio: 16/9;
 
@@ -73,13 +71,19 @@ margin-bottom: 60px;
     object-fit: cover;
 }
 
-
 /* ======== reviews text slider ========= */
 
 .reviews-social {
     padding-top: 25px;
     margin-bottom: 73px;
     position: relative;
+
+    @media (max-width: 767px) {
+        padding-block: 73px;
+        padding-inline: 11px;
+        margin: 0 calc(-50vw + 50%);
+        background-color: rgba(4, 119, 254, 0.18);;
+    }
 }
 
 .section-subtitle.subtitle-rew  {
@@ -128,6 +132,21 @@ margin-bottom: 60px;
     right: 0;
     display: flex;
     gap: 10px;
+
+    @media (max-width: 767px) {
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+    @media (max-width: 374px) {
+        gap: 30px;
+    }
+
+    .swiper-pagination {
+        @media (max-width: 374px) {
+            display: none;
+        }
+    }
 }
 
 .slider-txt-prev,
@@ -150,6 +169,10 @@ margin-bottom: 60px;
             color: red;
         }
     }
+
+    @media (max-width: 767px) {
+        width: unset;
+    }
 }
 
 .review {
@@ -163,6 +186,18 @@ margin-bottom: 60px;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 4;
         overflow: hidden;
+
+        @media (max-width: 767px) {
+            min-height: 275px;
+            font-size: 16px;
+            line-height: 2.07;
+            -webkit-line-clamp: 8;
+        }
+
+        @media (max-width: 525px) {
+            min-height: 317px;
+            font-size: 14px;
+        }
     }
 
     p + p {
@@ -175,8 +210,11 @@ margin-bottom: 60px;
         font-weight: 700;
         line-height: 1.81;
         text-transform: uppercase;
-        text-decoration: underline;
         color: #0477fe;
+    }
+
+    @media (max-width: 525px) {
+        width: 100%;
     }
 }
 
@@ -185,6 +223,12 @@ margin-bottom: 60px;
     bottom: -20px;
     right: 0;
     z-index: 2;
+
+    @media (max-width: 767px) {
+        margin-top: 30px;
+        position: relative;
+        bottom: 0;
+    }
 }
 
 /* ======== reviews logo slider ========= */
