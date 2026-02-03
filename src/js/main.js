@@ -164,7 +164,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const swiperTes = new Swiper('.reviews-photo-slider', {
     // Optional parameters
-    slidesPerView: 4,
+    slidesPerView: 1,
     spaceBetween: 0,
     loop: true,
 
@@ -172,6 +172,22 @@ document.addEventListener("DOMContentLoaded", function () {
     navigation: {
       nextEl: '#slider-next-tes',
       prevEl: '#slider-prev-tes',
+    },
+
+    breakpoints: {
+      665: {
+        slidesPerView: 2,
+      },
+
+      880: {
+        slidesPerView: 3,
+      },
+
+      1200: {
+        slidesPerView: 4,
+      },
+
+
     },
   });
   /************************************* */
