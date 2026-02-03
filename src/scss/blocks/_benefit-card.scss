@@ -1,28 +1,49 @@
 /* ======== benefit card ========= */
 .benefit-card {
-    width: 564px!important;
-    // width: 31.5%;
-    height: 227px;
+    width: 31.5%;
+    height: 253px;
     position: relative;
     padding: 80px 20px 20px 20px;
     border: 2px solid rgba(0, 0, 0, 0.08);
     border-radius: 10px;
     background-color: rgba(217, 217, 217, 0.15);
 
-    // @media (max-width: 1479px) {
-    //     height: remy(227);
-    //     padding: remy(80) remy(20) remy(20) remy(20);
-    //     border-radius: remy(10);
-    // }
+    @media (max-width: 1479px) {
+        height: remy(253);
+        padding: remy(80) remy(20) remy(20) remy(20);
+        border-radius: remy(10);
+    }
+
+    @media (max-width: 767px) {
+        padding: 80px 20px 20px 20px;
+        width: 100%;
+        height: 330px;
+        border-radius: 10px;
+    }
+
+    @media (max-width: 374px) {
+        padding: remy2(80) remy2(20) remy2(20) remy2(20);
+        height: remy2(293);
+        border-radius: remy2(10);
+    }
 }
 
 .benefit-card:nth-child(5n + 1), .benefit-card:nth-child(5n + 2) {
-    // width: 45.4%;
+    width: 45.4%;
     height: 284px;
 
-    // @media (max-width: 1479px) {
-    //     height: remy(284);
-    // }
+    @media (max-width: 1479px) {
+        height: remy(284);
+    }
+
+    @media (max-width: 767px) {
+        width: 100%;
+        height: 330px;
+    }
+
+    @media (max-width: 374px) {
+        height: remy2(293);
+    }
 }
 
 .benefit-card__img {
@@ -39,17 +60,38 @@
     border-radius: 50%;
     background-color: var(--accent-color);
 
-    // @media (max-width: 1479px) {
-    //     left: remy(75);
-    //     width: remy(105);
-    //     height: remy(105);
-    // }
+    @media (max-width: 1479px) {
+        left: remy(75);
+        width: remy(105);
+        height: remy(105);
+    }
+
+    @media (max-width: 767px) {
+        width: 105px;
+        height: 105px;
+        left: 50%;
+    }
+
+    @media (max-width: 374px) {
+        width: remy2(105);
+        height: remy2(105);
+    }
 
     img {
-        // @media (max-width: 1479px) {
-        //     width: remy(60);
-        //     height: remy(60);
-        // }
+        @media (max-width: 1479px) {
+            width: remy(60);
+            height: remy(60);
+        }
+
+        @media (max-width: 767px) {
+            width: 60px;
+            height: 60px;
+        }
+
+        @media (max-width: 374px) {
+            width: remy2(60);
+            height: remy2(60);
+        }
     }
 }
 
@@ -61,16 +103,37 @@
     line-height: 1.75;
     color: var(--accent-color);
 
-    // @media (max-width: 1479px) {
-    //     margin-bottom: remy(4);
-    //     font-size: remy(20);
-    // }
+    @media (max-width: 1479px) {
+        margin-bottom: remy(4);
+        font-size: remy(20);
+    }
+
+    @media (max-width: 767px) {
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 4px;
+
+
+    @media (max-width: 374px) {
+        font-size: remy2(20);
+    }
+    }
 }
 
 .benefit-card__text {
     line-height: 1.81;
 
-    // @media (max-width: 1479px) {
-    //     font-size: remy(16);
-    // }
+    @media (max-width: 1479px) {
+        font-size: remy(16);
+    }
+
+    @media (max-width: 767px) {
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.79;
+    }
+
+    @media (max-width: 374px) {
+        font-size: remy2(14);
+    }
 }

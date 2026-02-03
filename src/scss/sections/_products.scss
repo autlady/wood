@@ -72,6 +72,16 @@
 .benefits-slider-controls {
     display: flex;
     column-gap: 44px;
+
+    @media (max-width: 480px) {
+        column-gap: 10px;
+    }
+
+    @media (max-width: 374px) {
+        .swiper-pagination {
+            display: none;
+        }
+    }
 }
 
 .products-slider
