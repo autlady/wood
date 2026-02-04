@@ -80,7 +80,7 @@ section.reviews(id="reviews")
                             a(href="#!" target="_blank") Проверить отзыв
             .btn-wrapper
                 a(href="#!" target="_blank").btn.btn--reviews Смотреть все отзывы в VK
-        .reviews-logos.none
+        .reviews-logos
             .reviews-videos__title
                 h3.section-subtitle Отзывы на независимых площадках
             // LOGO SLIDER
@@ -101,20 +101,39 @@ section.reviews(id="reviews")
                     .swiper-slide
                         a(href="!#").logo
                             img(src="./img/logo/flamp.webp" srcset="./img/logo/flamp@2x.webp 2x" width="219" height="67" alt="img")
+            // LOGO BLOCK MOBILE
+            .reviews-logos-mob
+                .rating-icons
+                    a.rating-link(href="#!")
+                        img(src="./img/rating/2gis@2x.webp" width="47" alt="img")
+                    a.rating-link(href="#!")
+                        img(src="./img/rating/yandex@2x.webp" width="27" alt="img")
+                    a.rating-link(href="#!")
+                        img(src="./img/rating/flamp@2x.webp" width="49" alt="img")
+                    a.rating-link(href="#!")
+                        img(src="./img/rating/avito@2x.webp" width="53" alt="img")
+                    a.rating-link(href="#!")
+                        img(src="./img/rating/google@2x.webp" width="47" alt="img")
+
         // MEDIA
-        //- .reviews-media
-        //-     .media-text
-        //-         h3.section-subtitle СМИ о нас
-        //-         p.pr-30 Растём и развиваемся. В 2014 году к нам приезжал канал "СТС-Ладья" узнать цены на дрова для телепередачи "Точнее".
-        //-         .accent-block
-        //-             .reviews-videos__title
-        //-                 h3.section-subtitle.section-subtitle--accent Мошенники!
-        //-             p Внимание, мошенники предлагают товар от нашего имени с большой скидкой, с условием 100% предоплаты на карту. &nbsp;
-        //-                 a(href="#!") Подробнее в группе.
-        //-     .media-video
-        //-         .reviews-video
-        //-             a(href="https://www.youtube.com/embed/__-vp0g_BhA?si=ATYLxRiZZo-EeydT" data-fancybox="media").media-video__box
-        //-                 img(src="./img/media.webp" srcset="./img/media@2x.webp 2x" alt="img" loading="lazy")
+        .reviews-media
+            .media-text
+                h3.section-subtitle СМИ о нас
+                p.pr-30 Растём и развиваемся. В 2014 году к нам приезжал канал "СТС-Ладья" узнать цены на дрова для телепередачи "Точнее".
+                .accent-block
+                    .reviews-videos__title
+                        h3.section-subtitle.section-subtitle--accent Мошенники!
+                    p Внимание, мошенники предлагают товар от нашего имени с большой скидкой, с условием 100% предоплаты на карту. &nbsp;
+                        a(href="#!") Подробнее в группе.
+            .media-video
+                a(href="https://www.youtube.com/embed/__-vp0g_BhA?si=ATYLxRiZZo-EeydT" data-fancybox="media").media-video__box
+                    img(src="./img/media.webp" srcset="./img/media@2x.webp 2x" alt="img" width="867" height="474" loading="lazy")
+            .accent-block-mob
+                .reviews-videos__title
+                    h3.section-subtitle.section-subtitle--accent Мошенники!
+                p Внимание, мошенники предлагают товар от нашего имени с большой скидкой, с условием 100% предоплаты на карту. &nbsp;
+                    a(href="#!") Подробнее в группе.
+
 
 
 

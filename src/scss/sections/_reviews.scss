@@ -1,7 +1,6 @@
 /* ======== reviews video ========= */
 .reviews__title .section-title {
-
-margin-bottom: 60px;
+    margin-bottom: 60px;
 }
 
 .reviews-videos {
@@ -234,17 +233,37 @@ margin-bottom: 60px;
 /* ======== reviews logo slider ========= */
 
 .reviews-logos {
-    margin-bottom: 60px;
+    padding-bottom: 60px;
+
+    @media (max-width: 767px) {
+        padding-block: 40px;
+    }
+
+    @media (max-width: 374px) {
+        padding-block: remy2(40);
+    }
+}
+
+.reviews-logo-slider {
+    @media (max-width: 767px) {
+        display: none;
+    }
+}
+
+.reviews-logos-mob .rating-icons {
+    display: none;
+    @media (max-width: 767px) {
+        display: flex;
+        column-gap: 40px;
+    }
+
+    @media (max-width: 374px) {
+        column-gap: remy2(40);
+    }
 }
 
 .reviews-logo-slider .swiper-wrapper {
     display: flex;
-    // justify-content: center;
-    // align-items: center;
-}
-
-.reviews-logo-slider .swiper-slide {
-    // height: 100px;
 }
 
 .reviews-logo-slider .swiper-slide .logo {
@@ -265,13 +284,37 @@ margin-bottom: 60px;
     margin-bottom: 114px;
     display: flex;
     column-gap: 41px;
+
+    @media (max-width: 1023px) {
+        flex-direction: column;
+        row-gap: 30px;
+    }
 }
 
 .media-text {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     width: 26.7%;
+
+    @media (max-width: 1023px) {
+        width: 70%;
+    }
+
+    @media (max-width: 525px) {
+        width: 100%;
+    }
+}
+
+.media-text .section-subtitle {
+    margin-bottom: 35px;
+
+    @media (max-width: 1479px) {
+        margin-bottom: remy(35);
+    }
+
+    @media (max-width: 1023px) {
+        margin-bottom: 35px;
+    }
 }
 
 .media-text p {
@@ -282,6 +325,14 @@ margin-bottom: 60px;
     a {
         text-decoration: underline;
     }
+
+    @media (max-width: 1479px) {
+        font-size: remy(17);
+    }
+
+    @media (max-width: 1023px) {
+        font-size: 17px;
+    }
 }
 
 .pr-30 {
@@ -289,14 +340,50 @@ margin-bottom: 60px;
 }
 
 .accent-block {
-    // margin-top: 30px;
+    margin-top: 40px;
     padding: 22px 30px 40px 25px;
     border-radius: 7px;
     background-color: rgba(255, 0, 15, 0.14);
+
+    a {
+        text-decoration: underline;
+    }
+
+    @media (max-width: 1023px) {
+        display: none;
+    }
+}
+
+.accent-block-mob {
+    display: none;
+    font-size: 17px;
+    line-height: 1.71;
+    width: 70%;
+    padding: 22px 30px 40px 25px;
+    border-radius: 7px;
+    background-color: rgba(255, 0, 15, 0.14);
+
+    a {
+        text-decoration: underline;
+    }
+
+    @media (max-width: 1023px) {
+        display: block;
+    }
+
+    @media (max-width: 525px) {
+        width: 100%;
+    }
 }
 
 .media-video {
     flex-shrink: 0;
+    width: 69.9%;
+    aspect-ratio: 16/9;
+
+    @media (max-width: 525px) {
+        width: 100%;
+    }
 }
 
 .media-video__box img {

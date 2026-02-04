@@ -145,6 +145,10 @@ select:-webkit-autofill:focus {
   max-width: var(--container-width);
   margin: 0 auto;
   padding: 0 15px;
+
+  @media (max-width: 375px) {
+    padding: 0 10px;
+  }
 }
 
 /* ======== TYPOGRAPHY ========= */
