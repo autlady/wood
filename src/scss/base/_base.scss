@@ -161,6 +161,10 @@ select:-webkit-autofill:focus {
   color: #fff;
   text-transform: uppercase;
 
+  @media (max-width: 1479px) {
+    font-size: remy(50);
+  }
+
   @media (max-width: 1023px) {
     font-size: 30px;
     line-height: 1.5;

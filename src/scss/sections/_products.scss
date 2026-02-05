@@ -1,6 +1,11 @@
 .products {
     padding-top: 50px;
     padding-bottom: 108px;
+
+    @media (max-width: 767px) {
+        padding-top: 10px;
+        padding-bottom: 70px;
+    }
 }
 
 .products__title {

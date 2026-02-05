@@ -1,5 +1,10 @@
 .production {
     padding-block: 121px;
+
+    @media (max-width: 767px) {
+        padding-top: 97px;
+        padding-bottom: 80px;
+    }
 }
 
 .production__title {

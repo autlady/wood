@@ -9,8 +9,11 @@
     background-position: center;
 
     @media (max-width: 1210px) {
-          padding-bottom: 0px;
+          padding-bottom: 55px;
+    }
 
+    @media (max-width: 767px) {
+        padding-top: 85px;
     }
 }
 
@@ -28,6 +31,10 @@
     font-size: 17px;
     line-height: 1.94;
     color: #fff;
+
+    @media (max-width: 767px) {
+        margin-bottom: 32px;
+    }
 }
 
 .about__text p + p {
@@ -47,10 +54,15 @@
     }
     @media (max-width: 767px) {
         margin-left: -15px;
-        width: 375px;
+        width: 416px;
     }
+
+    @media (max-width: 525px) {
+        width: 100%;
+    }
+
     @media (max-width: 380px) {
-        margin-left: -40px;
+        margin-left: -10px;
     }
 }
 

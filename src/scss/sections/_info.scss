@@ -4,6 +4,10 @@
 
 .info__title {
     margin-bottom: 22px;
+
+    @media (max-width: 767px) {
+        margin-bottom: 10px;
+    }
 }
 
 .info__text {
