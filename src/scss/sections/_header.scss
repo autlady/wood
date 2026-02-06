@@ -1,5 +1,6 @@
 /* ======== header top ========= */
 .header-top {
+    padding-block: 5px;
     @media (max-width: 767px) {
         padding-top: 5px;
         padding-bottom: 25px;
@@ -33,10 +34,17 @@
 }
 
 .header-logo {
+    animation: spin 13s linear infinite;
     @media (max-width: 767px) {
        display: none;
     }
 }
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+  }
+
 
 .header-col-mob {
     @media (max-width: 767px) {

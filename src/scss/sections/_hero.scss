@@ -76,11 +76,17 @@
 
 .hero__title {
     margin-bottom: 18px;
+    animation: slideIn 0.6s forwards;
 
     @media (max-width: 375px) {
         margin-bottom: 38px;
     }
 }
+
+@keyframes slideIn {
+    from { transform: translateX(-20px); opacity: 0; }
+    to   { transform: translateX(0); opacity: 1; }
+  }
 
 .hero__text {
     width: 63.6%;

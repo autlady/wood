@@ -19,6 +19,8 @@
     transition: background-color 0.2s ease-in;
     cursor: pointer;
 
+    animation: pulse 1.5s infinite;
+
     &:hover {
         background-color: lighten($color: #44a603, $amount: 5%);;
     }
@@ -29,6 +31,8 @@
     line-height: 55px;
     font-weight: 700;
     min-width: 210px;
+
+    animation: none;
 }
 
 .btn--reviews {
@@ -37,6 +41,8 @@
     background-color: #0477fe;
     font-weight: 700;
     padding: 0 45px;
+
+    animation: none;
 
     &:hover {
         background-color: lighten($color: #0477fe, $amount: 5%);;
@@ -55,6 +61,7 @@
     font-weight: 700;
     padding: 0 15px;
     line-height: 56px;
+    animation: none;
 
     img {
         width: 93px;
@@ -98,6 +105,8 @@
     transition: background-color 0.2s ease-in;
     cursor: pointer;
 
+    animation: none;
+
     &:hover {
         background-color: lighten($color: #584340, $amount: 5%);;
     }
@@ -110,6 +119,8 @@
     line-height: 55px;
     color: #000;
     font-weight: 700;
+
+    animation: none;
 
     &:hover {
         background-color: lighten($color: #f8ee00, $amount: 5%);;
@@ -124,7 +135,19 @@
     color: #fff;
     font-weight: 700;
 
+    animation: none;
+
     &:hover {
         background-color: lighten($color: #b5c94d, $amount: 5%);;
     }
 }
+
+@keyframes pulse {
+    0%   { transform: scale(1); }
+    50%  { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+
+  .element {
+    animation: pulse 1.5s infinite;
+  }
