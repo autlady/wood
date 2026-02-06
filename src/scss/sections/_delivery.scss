@@ -87,25 +87,29 @@
 }
 
 .districts-wrapper {
+    width: 100%;
     margin-bottom: 38px;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    // grid-template-rows: repeat(7, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     gap: 18px;
 
     @media (max-width: 767px) {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 18px;
-    }
-    @media (max-width: 480px) {
-        margin-top: 43px;
-        grid-template-columns: repeat(2, 1fr);
         column-gap: 14px;
         row-gap: 19px;
     }
 }
 
+.districts-wrapper > :last-child {
+    flex-grow: 1;
+
+    @media (max-width: 767px) {
+        width: 100%;
+    }
+}
+
+
 .district {
+    width: calc(((100% - (4 * 18px)) / 5));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -116,22 +120,33 @@
     font-size: 17px;
     text-align: center;
 
+    a {
+        margin-left: 3px;
+    }
+
     @media (max-width: 1023px) {
         font-size: 14px;
     }
-}
-
-.district:last-child {
-    grid-column: span 4;
 
     @media (max-width: 767px) {
-        grid-column: span 2;
+         width: calc(((100% - 14px) / 2));
     }
 }
 
+/* Предпоследний элемент */
 .district:nth-last-child(2) {
-    @media (max-width: 480px) {
-        grid-column: span 2;
+    @media (max-width: 767px) {
+        width: calc(50% - 14px);
+        background-color: aqua;
+    }
+ /* по умолчанию — 1 колонка */
+}
+
+/* Если предпоследний — единственный в строке, растягиваем на 2 колонки */
+.item:nth-last-child(2):first-child {
+    @media (max-width: 767px) {
+        width: 100%;
+        background-color: blue;
     }
 }
 
