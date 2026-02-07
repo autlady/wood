@@ -134,7 +134,14 @@ document.addEventListener("DOMContentLoaded", function () {
     // Optional parameters
     slidesPerView: 1,
     spaceBetween: 0,
+    a11y: false,
+    freeMode: true,
+    speed: 4000,
     loop: true,
+    autoplay: {
+        delay: 0.0,
+        disableOnInteraction: false,
+    },
 
     // Navigation arrows
     navigation: {
@@ -166,7 +173,14 @@ document.addEventListener("DOMContentLoaded", function () {
     // Optional parameters
     slidesPerView: 1,
     spaceBetween: 0,
+    a11y: false,
+    freeMode: true,
+    speed: 8000,
     loop: true,
+    autoplay: {
+        delay: 0.0,
+        disableOnInteraction: false,
+    },
 
     // Navigation arrows
     navigation: {
@@ -198,14 +212,14 @@ document.addEventListener("DOMContentLoaded", function () {
     // Optional parameters
     slidesPerView: 5,
     spaceBetween: 16,
-    // a11y: false,
-    // freeMode: true,
-    // speed: 2000,
-    // loop: true,
-    // autoplay: {
-    //     delay: 0.0,
-    //     disableOnInteraction: false,
-    // },
+    a11y: false,
+    freeMode: true,
+    speed: 3000,
+    loop: true,
+    autoplay: {
+        delay: 0.0,
+        disableOnInteraction: false,
+    },
 
   });
   /************************************* */
@@ -225,11 +239,6 @@ document.addEventListener("DOMContentLoaded", function () {
       el: '.swiper-pagination',
       type: 'bullets',
     },
-    // autoplay: {
-    //   delay: 2000,
-    //   disableOnInteraction: false,
-    //   speed: 600
-    // },
   });
   /************************************* */
 
@@ -244,6 +253,14 @@ document.addEventListener("DOMContentLoaded", function () {
       specificSwiperProd = new Swiper(".products-slider", {
         slidesPerView: 1,
         spaceBetween: 20,
+        a11y: false,
+        freeMode: true,
+        speed: 2000,
+        loop: true,
+        autoplay: {
+            delay: 0.0,
+            disableOnInteraction: false,
+        },
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
@@ -292,6 +309,14 @@ function showAccordeon() {
   const swiperBenefits = new Swiper('.benefits-slider', {
         slidesPerView: 1,
         spaceBetween: 16,
+        a11y: false,
+        freeMode: true,
+        speed: 2000,
+        loop: true,
+        autoplay: {
+            delay: 0.0,
+            disableOnInteraction: false,
+        },
         pagination: {
           el: ".swiper-pagination",
           clickable: true,

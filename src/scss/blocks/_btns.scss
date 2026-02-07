@@ -19,12 +19,16 @@
     transition: background-color 0.2s ease-in;
     cursor: pointer;
 
-    animation: pulse 1.5s infinite;
-
     &:hover {
         background-color: lighten($color: #44a603, $amount: 5%);;
     }
+
 }
+
+.pulse {
+    animation: pulse 1.5s infinite;
+}
+
 
 .h-55 {
     height: 55px;
@@ -61,12 +65,20 @@
     font-weight: 700;
     padding: 0 15px;
     line-height: 56px;
-    animation: none;
+    background: linear-gradient(90deg, #7cdf3a 50%, #44a603 50%);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  transition: background-position 0.6s ease;
+
+  &:hover {
+    background-position: 0 0;
+  }
 
     img {
         width: 93px;
         height: 73px;
         position: relative;
+        z-index: 3;
         top: -20px;
 
         @media (max-width: 374px) {
@@ -85,6 +97,7 @@
     }
 }
 
+
 .btn-order {
     display: inline-flex;
     height: 60px;
@@ -98,19 +111,23 @@
     text-align: center;
 
     border-radius: 5px;
-    background-color: #584340;
 
     white-space: nowrap;
 
     transition: background-color 0.2s ease-in;
     cursor: pointer;
 
-    animation: none;
+    background: linear-gradient(to right, #80625e 50%, #584340 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    transition: background-position 0.4s ease;
 
     &:hover {
-        background-color: lighten($color: #584340, $amount: 5%);;
+        background-position: 0 0;
     }
 }
+
+
 
 .btn-accent {
     width: 240px;
