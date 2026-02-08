@@ -133,12 +133,13 @@
     }
 }
 
-.delivery__map {
+.delivery-map {
     display: block;
     cursor: pointer;
     width: 100%;
     aspect-ratio: 2/1;
     border: none;
+    overflow: hidden;
 
     iframe {
         display: block;
@@ -148,5 +149,22 @@
         border: 0;
         pointer-events: none;
     }
-  }
+
+
+    @media (max-width: 934px) {
+        height: 450px;
+    }
+
+    @media (max-width: 600px) {
+        display: none;
+    }
+}
+
+.delivery-map-mob {
+    display: none;
+
+    @media (max-width: 600px) {
+        display: block;
+    }
+}
 
