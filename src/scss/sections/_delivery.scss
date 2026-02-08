@@ -133,28 +133,11 @@
     }
 }
 
-/* Предпоследний элемент */
-.district:nth-last-child(2) {
-    @media (max-width: 767px) {
-        width: calc(50% - 14px);
-        background-color: aqua;
-    }
- /* по умолчанию — 1 колонка */
-}
-
-/* Если предпоследний — единственный в строке, растягиваем на 2 колонки */
-.item:nth-last-child(2):first-child {
-    @media (max-width: 767px) {
-        width: 100%;
-        background-color: blue;
-    }
-}
-
 .delivery__map {
     display: block;
     cursor: pointer;
     width: 100%;
-    aspect-ratio: 155/83;
+    aspect-ratio: 2/1;
     border: none;
 
     iframe {

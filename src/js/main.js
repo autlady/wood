@@ -1,5 +1,46 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+  function updateDistrictLayout() {
+    const wrapper = document.querySelector('.districts-wrapper');
+    const districts = wrapper.querySelectorAll('.district');
+    const count = districts.length;
+
+    // Применяем только на экранах < 767px
+    if (window.innerWidth >= 767) {
+      // Сбрасываем стили для больших экранов
+      districts.forEach(el => {
+        el.style.width = '';
+        el.style.flex = '';
+      });
+      return;
+    }
+
+    if (count < 3) return; // Нужно минимум 3 элемента
+
+    const secondLast = districts[count - 2]; // Предпоследний
+    const thirdLast = districts[count - 3];  // Третий с конца
+
+    // Сбрасываем предыдущие стили
+    districts.forEach(el => {
+      el.style.width = '';
+      el.style.flex = '';
+    });
+
+    if (count % 2 === 0) {
+      // Чётное число: предпоследний — 100%, переносится на новую строку
+      secondLast.style.flex = '0 0 100%';
+    } else {
+      // Нечётное: оба элемента — по calc(((100% - 14px) / 2))
+      const calcValue = 'calc(((100% - 14px) / 2))';
+      secondLast.style.flex = `0 0 ${calcValue}`;
+      thirdLast.style.flex = `0 0 ${calcValue}`;
+    }
+  }
+
+  // Вызываем при загрузке и ресайзе
+  window.addEventListener('load', updateDistrictLayout);
+  window.addEventListener('resize', updateDistrictLayout);
+
 
   // Fancybox
   Fancybox.bind("[data-fancybox]", {
@@ -47,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // поведение ссылок в хедере при клике
 
     const menuItems = mobileMenu.querySelectorAll('a');
-    
+
     menuItems.forEach(function (item) {
         item.addEventListener('click', function () {
             for (el of menuItems) {
