@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const bodyEl = document.body;
    const btnMenu = document.querySelector('.menu-open');
-   const mobileMenu = document.querySelector('.menu');
+   const mobileMenu = document.querySelector('.menu-wrapper');
 
 
 
@@ -47,8 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // поведение ссылок в хедере при клике
 
     const menuItems = mobileMenu.querySelectorAll('a');
-    // const menu = document.querySelector('.header-nav-wrapper');
-
+    
     menuItems.forEach(function (item) {
         item.addEventListener('click', function () {
             for (el of menuItems) {
