@@ -351,7 +351,7 @@ function showAccordeon() {
         spaceBetween: 16,
         a11y: false,
         freeMode: true,
-        speed: 2000,
+        speed: 5000,
         loop: true,
         autoplay: {
             delay: 0.0,

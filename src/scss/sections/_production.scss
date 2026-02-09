@@ -36,7 +36,6 @@
 
 .production__subtitle {
     min-height: 60px;
-    // margin-bottom: 27px;
     @media (max-width: 767px) {
         min-height: unset;
         margin-bottom: 27px;
@@ -44,9 +43,6 @@
 }
 
 .production-video {
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: space-between;
     width: 48%;
 
     @media (max-width: 767px) {
@@ -71,7 +67,7 @@
         width: 70%;
     }
 
-    @media (max-width: 380px) {
+    @media (max-width: 480px) {
         width: 100%;
     }
 }
