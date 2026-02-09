@@ -39,6 +39,9 @@
 }
 
 .production-video {
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
     width: 48%;
 
     @media (max-width: 767px) {
@@ -47,8 +50,6 @@
 }
 
 .production-video__box {
-    // width: 596px;
-    // height: 339px;
     width: 100%;
     flex-shrink: 0;
     border-radius: 7px;

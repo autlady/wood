@@ -10,10 +10,17 @@
     position: relative;
     margin-bottom: 75px;
 
+    @media (max-width: 1023px) {
+        margin-bottom: 0;
+    }
+
     @media (max-width: 767px) {
         padding-block: 56px;
         padding-inline: 11px;
         margin: 0 calc(-50vw + 50%);
+    }
+
+    @media (max-width: 480px) {
         background-color: #dff0d4;
     }
 
@@ -96,6 +103,10 @@
     @media (max-width: 767px) {
         column-gap: 14px;
         row-gap: 19px;
+    }
+
+    @media (max-width: 480px) {
+        padding-top: 46px;
     }
 }
 

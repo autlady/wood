@@ -2,7 +2,7 @@
     position: relative;
     height: 721px;
     background-color: #fff;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(./../../img/hero/hero-bg@2x.webp);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), image-set(url(../img/hero/hero-bg.webp) 1x, url(../img/hero/hero-bg@2x.webp) 2x);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -27,7 +27,7 @@
 
 .hero::after {
     content: '';
-    background-image: url(../../img/hero/clouds@2x.webp);
+    background-image: image-set(url("../img/hero/clouds.webp") 1x, url("../img/hero/clouds@2x.webp") 2x);
     background-size: cover;
     position: absolute;
     bottom: -1px;
