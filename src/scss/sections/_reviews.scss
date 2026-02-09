@@ -58,6 +58,12 @@
 
 /* ======== reviews photo slider ========= */
 
+.reviews-photo {
+    @media (max-width: 767px) {
+        padding-bottom: 40px;
+    }
+}
+
 .reviews-photo-slider .swiper-slide {
     padding: 10px;
     background-color: #fff;
