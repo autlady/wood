@@ -9,6 +9,10 @@
     border: 2px solid rgba(0, 0, 0, 0.08);
     border-radius: 10px;
 
+        @media (max-width: 1369px) {
+        height: 544px!important;
+    }
+
 }
 
 
