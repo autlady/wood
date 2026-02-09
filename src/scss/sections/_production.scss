@@ -35,7 +35,12 @@
 }
 
 .production__subtitle {
-    margin-bottom: 27px;
+    min-height: 60px;
+    // margin-bottom: 27px;
+    @media (max-width: 767px) {
+        min-height: unset;
+        margin-bottom: 27px;
+    }
 }
 
 .production-video {
@@ -62,20 +67,10 @@
         object-fit: cover;
     }
 
-    // @media (max-width: 1310px) {
-    //     width: remy(596);
-    //     height: remy(339);
-    // }
-
-    // @media (max-width: 1032px) {
-    //     width: 596px;
-    //     height: 339px;
-    // }
-
     @media (max-width: 767px) {
-        width: 355px;
-        height: 202px;
+        width: 70%;
     }
+
     @media (max-width: 380px) {
         width: 100%;
     }
