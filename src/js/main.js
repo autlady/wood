@@ -62,8 +62,6 @@ document.addEventListener("DOMContentLoaded", function () {
    const btnMenu = document.querySelector('.menu-open');
    const mobileMenu = document.querySelector('.menu-wrapper');
 
-
-
   function closeMobileMenu() {
     btnMenu.classList.remove('active');
     mobileMenu.style.height = 0;
@@ -92,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function () {
     menuItems.forEach(function (item) {
         item.addEventListener('click', function () {
             for (el of menuItems) {
-              removeActive();
+              closeMobileMenu();
             }
         });
     }
